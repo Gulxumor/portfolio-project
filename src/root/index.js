@@ -1,21 +1,11 @@
-import Hero from "../components/Hero";
 import Sidebar from "../components/Sidebar";
-import Experiences from "../components/Experiences";
-import Education from "../components/Education";
-import About from "../components/About";
-import Portfolio from "../components/Portfolio";
-import Footer from "../components/Footer";
+import Pages from "../components/Pages";
 
 const Root = () => {
   return (
-    <div>
+    <div className={`flex overflow-y-hidden`}>
       <Sidebar />
-      {/* <Hero />
-      <About />
-      <Experiences />
-      <Education />
-      <Portfolio />
-      <Footer /> */}
+      <Pages />
     </div>
   );
 };

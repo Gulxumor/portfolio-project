@@ -5,12 +5,13 @@ module.exports = {
     extend: {
       colors: {
         orange: "#ff9301",
-        gray: "#f7f7ff",
+        kulrang: "#f7f7ff",
+        kulrang_text: "#7b7b7b",
         white: "#ffffff",
         black: "#0b0b13",
       },
       fontFamily: {
-        rubik: ["Rubik", "sans-serif"],
+        rubik: ["Rubik", "sans-serif", "monospac"],
       },
     },
     screens: {
