@@ -8,8 +8,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Rubik", "sans-serif";
-        transition: all 0.3s ease;
+  transition: all 0.3s linear;
 }
 
 ::-webkit-scrollbar {
@@ -22,7 +21,6 @@
 }
 
 ::selection {
-  /* background: rgb(155, 205, 235); */
   background: black;
   color: white;
 }

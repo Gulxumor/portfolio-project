@@ -1,19 +1,25 @@
-import Hero from "../Hero";
-import About from "../About";
-import Experiences from "../Experiences";
-import Education from "../Education";
-import Portfolio from "../Portfolio";
-import Footer from "../Footer";
-import { styles } from "../../utils/tailwind_variables";
+import Hero from "./Hero";
+import About from "./About";
+import Skills from "./Skills";
+import Experiences from "./Experiences";
+import Portfolio from "./Portfolio";
+import Technology from "./Technology";
+// import Education from "./Education";
+// import Footer from "./Footer";
 
 const Pages = () => {
   return (
-    <div className={`justify-evenly mx-[120px]`}>
+    <div className="ml-20">
       <Hero />
-      <About />
-      {/*  <Education />
+      <div className="bg-kulrang">
+        <About />
+        <Technology />
+      </div>
       <Experiences />
+      <Skills />
       <Portfolio />
+      {/* 
+      <Education />
       <Footer /> */}
     </div>
   );

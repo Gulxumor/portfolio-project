@@ -4,13 +4,11 @@ import { styles } from "../../utils/tailwind_variables";
 
 const Sidebar = () => {
   return (
-    <div className="w-20  overflow-y-hidden">
+    <div className="w-20 fixed z-50 bg-white">
       <div
-        className={`bg-[orange] text-5xl h-20 ${styles.flex} flex-col cursor-pointer border-r-[1px] border-orange `}
+        className={`bg-[orange] text-white text-5xl h-20 ${styles.flex} border-r-[1px] border-orange font-semibold`}
       >
-        <a href="#" className="text-white font-normal">
-          G
-        </a>
+        G
       </div>
       <div className="wrapper border-[1px] border-[#e9e9ea] pb-44 pt-20 h-full">
         <div className={`${styles.flex} border-b-[1px] border-[#e9e9ea] pb-10`}>

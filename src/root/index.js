@@ -3,7 +3,7 @@ import Pages from "../components/Pages";
 
 const Root = () => {
   return (
-    <div className={`flex overflow-y-hidden`}>
+    <div>
       <Sidebar />
       <Pages />
     </div>
