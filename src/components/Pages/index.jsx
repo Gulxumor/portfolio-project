@@ -4,8 +4,8 @@ import Skills from "./Skills";
 import Experiences from "./Experiences";
 import Portfolio from "./Portfolio";
 import Technology from "./Technology";
-// import Education from "./Education";
-// import Footer from "./Footer";
+import Education from "./Education";
+import Footer from "./Footer";
 
 const Pages = () => {
   return (
@@ -18,9 +18,8 @@ const Pages = () => {
       <Experiences />
       <Skills />
       <Portfolio />
-      {/* 
       <Education />
-      <Footer /> */}
+      <Footer />
     </div>
   );
 };
