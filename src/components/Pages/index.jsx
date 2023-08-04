@@ -1,15 +1,18 @@
-import Hero from "./Hero";
-import About from "./About";
-import Skills from "./Skills";
-import Experiences from "./Experiences";
-import Portfolio from "./Portfolio";
-import Technology from "./Technology";
+// import Hero from "./Hero";
+// import About from "./About";
+// import Skills from "./Skills";
+// import Experiences from "./Experiences";
+// import Portfolio from "./Portfolio";
+// import Technology from "./Technology";
 // import Education from "./Education";
-// import Footer from "./Footer";
+// import Main from "./Main";
+import Footer from "./Footer";
+import Contact from "./Contact";
 
 const Pages = () => {
   return (
     <div className="ml-20">
+      {/* <Main />
       <Hero />
       <div className="bg-kulrang">
         <About />
@@ -18,9 +21,9 @@ const Pages = () => {
       <Experiences />
       <Skills />
       <Portfolio />
-      {/* 
-      <Education />
-      <Footer /> */}
+      <Education /> */}
+      <Contact />
+      <Footer />
     </div>
   );
 };

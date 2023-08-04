@@ -6,9 +6,9 @@ import { styles } from "../../../utils/tailwind_variables";
 const Portfolio = () => {
   const { Meta } = Card;
   return (
-    <section className="w-[80%] m-auto mt-[100px] mb-28">
-      <span class="relative flex h-8 mb-10">
-        <span class="animate-pulse absolute w-8 inline-flex h-full rounded-full bg-orange opacity-75"></span>
+    <section className="w-[80%] m-auto mt-[100px] mb-28" id="portfolio">
+      <span className="relative flex h-8 mb-10">
+        <span className="animate-pulse absolute w-8 inline-flex h-full rounded-full bg-orange opacity-75"></span>
         <p className="text-4xl ml-3 mt-1 w-full font-medium">Projects</p>
       </span>
       <div className={`flex-wrap ${styles.flex}`}>

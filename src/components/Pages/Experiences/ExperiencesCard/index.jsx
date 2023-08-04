@@ -11,7 +11,7 @@ const ExperiencesCard = ({
   desc2,
 }) => {
   return (
-    <div className="flex bg-kulrang p-[35px]">
+    <div className="flex bg-kulrang p-[35px]  w-full">
       <Card className="bg-kulrang border-none w-[320px]">
         <h1 className="text-[20px] mt-1 font-medium ">{job}</h1>
         <p className="text-[14px] text-kulrang_text italic">{remote}</p>

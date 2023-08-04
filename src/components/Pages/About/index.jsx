@@ -28,8 +28,8 @@ const About = () => {
         </div>
 
         <div>
-          <span class="relative flex h-8 w-8 mb-10">
-            <span class="animate-pulse absolute  inline-flex h-full w-full rounded-full bg-orange opacity-75 "></span>
+          <span className="relative flex h-8 w-8 mb-10">
+            <span className="animate-pulse absolute  inline-flex h-full w-full rounded-full bg-orange opacity-75 "></span>
             <p className="text-4xl ml-3 mt-2 font-medium">Biography</p>
           </span>
 
