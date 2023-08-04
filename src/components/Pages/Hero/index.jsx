@@ -1,11 +1,11 @@
 import ReactTyped from "react-typed";
 import img from "../../../assets/images/logo.png";
 import { styles } from "../../../utils/tailwind_variables";
-import { DownOutlined } from "@ant-design/icons";
+
 const Hero = () => {
   return (
-    <div
-      className={`${styles.flex} flex-col w-[80%] m-auto flex-wrap`}
+    <section
+      className={`${styles.flex} flex-col w-[80%] m-auto flex-wrap h-[100vh]`}
       id="hero"
     >
       <div className={`w-full ${styles.flex} flex items-center justify-center`}>
@@ -52,14 +52,7 @@ const Hero = () => {
           />
         </div>
       </div>
-
-      <a
-        href="#about"
-        className={`${styles.flex} border-4 mt-16 animate-bounce bg-orange rounded-full w-10 h-10 mb-10`}
-      >
-        <DownOutlined className="text-white" />
-      </a>
-    </div>
+    </section>
   );
 };
 

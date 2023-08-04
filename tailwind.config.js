@@ -12,6 +12,7 @@ module.exports = {
       },
       fontFamily: {
         rubik: ["Rubik", "sans-serif", "monospac"],
+        mario: ["New Super Mario Font U", "sans-serif"],
       },
     },
     screens: {

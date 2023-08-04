@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2? family= Rubik:wght@300;400;500;600;700;800;900 & display=swap');
+@import url('https://fonts.cdnfonts.com/css/new-super-mario-font-u');
 
 @tailwind base;
 @tailwind components;
@@ -11,7 +12,14 @@
   transition: all 0.3s linear;
 }
 
+body {
+  scroll-behavior: smooth;
+}
 ::-webkit-scrollbar {
+  width: 5px;
+  }
+  
+  ::-webkit-scrollbar:hover {
   width: 10px;
 }
 
@@ -24,3 +32,17 @@
   background: black;
   color: white;
 }
+
+.icon:hover {
+  transform: rotateY(-5deg) translateY(-15px) rotateX(5deg) scale(1);
+}
+
+.shakeOnHover {
+  transform: rotate(40deg);
+}
+
+.shakeOnHover:hover {
+  animation: shakeOnHover 1.3s infinite;
+}
+
+@keyframes shakeOnHover {}
