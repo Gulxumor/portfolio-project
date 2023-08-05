@@ -1,112 +1,76 @@
-import { Button, Input } from "antd";
-// import { FaHandHolding, FaUser } from "react-icons/fa";
-import "./contact.css";
-const Form = () => {
-  const onFinish = (values) => {
-    console.log("Success:", values);
-  };
-  const onFinishFailed = (errorInfo) => {
-    console.log("Failed:", errorInfo);
-  };
+import ReactTyped from "react-typed";
 
+const Forms = () => {
   return (
-    <div>
-      {/* <form className="form" onsubmit="return false" autocomplete="off">
-        <div className="form-inner">
-          <h2>User Login</h2>
-          <div className="input-wrapper">
-            <label for="login-username">Username</label>
-            <div className="input-group">
-              <span className="icons">
-                <FaUser />
-              </span>
-              <input id="login-username" type="text" data-lpignore="true" />
-            </div>
-          </div>
-          <div className="input-wrapper">
-            <label for="login-password">Password</label>
-            <div className="input-group">
-              <span className="icons">
-                <FaHandHolding />
-              </span>
-              <input id="login-password" type="password" data-lpignore="true" />
-            </div>
-          </div>
-          <div className="btn-group">
-            <button className="btn btn--primary">Sign in</button>
-            <a className="btn--text" href="#0">
-              Forgot password?
-            </a>
+    <section>
+      <div className="max-h-screen py-6 flex flex-col justify-center sm:py-12 wrap">
+        <div className="relative py-3 sm:max-w-xl sm:mx-auto">
+          <div className="absolute inset-0 bg-gradient-to-r from-lightOrange to-orange shadow-lg transform -skew-y-6 hover:-skew-y-0 sm:skew-y-0 sm:-rotate-6 sm:rounded-3xl bg-red-300 hover:rotate-0 "></div>
+          <div className="relative px-10 py-10 bg-white shadow-lg sm:rounded-3xl sm:p-20 transform hover:origin-center">
+            <form className="max-w-md mx-auto">
+              <div className="w-[300px]">
+                <ReactTyped
+                  strings={["Let's get in touch!"]}
+                  typeSpeed={100}
+                  loop
+                  backSpeed={30}
+                  cursorChar="|"
+                  showCursor={true}
+                  className={`text-3xl text-orange font-medium`}
+                />
+              </div>
+              <div className="divide-y divide-gray-200">
+                <div className="py-8 text-base leading-6 space-y-4 text-gray-700 sm:text-lg sm:leading-7">
+                  <div className="relative">
+                    <input
+                      type="text"
+                      className="peer placeholder-transparent h-10 w-full border-b-2 border-gray-300 text-gray-900 text-[14px] focus:outline-none focus:border-orange"
+                      placeholder="Enter your Full Name"
+                      required
+                    />
+                    <label className="absolute left-0 -top-3.5 text-gray-600 text-sm peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-440 peer-placeholder-shown:top-2 transition-all peer-focus:-top-3.5 peer-focus:text-gray-600 peer-focus:text-sm">
+                      Full Name
+                    </label>
+                  </div>
+
+                  <div className="relative">
+                    <input
+                      type="email"
+                      className="peer placeholder-transparent h-10 w-full border-b-2 border-gray-300 text-gray-900 text-[14px] focus:outline-none focus:border-orange"
+                      placeholder="Enter your Email address"
+                      required
+                    />
+                    <label className="absolute left-0 -top-3.5 text-gray-600 text-sm peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-440 peer-placeholder-shown:top-2 transition-all peer-focus:-top-3.5 peer-focus:text-gray-600 peer-focus:text-sm">
+                      Email Address
+                    </label>
+                  </div>
+                  <div className="relative">
+                    <textarea
+                      required
+                      className="peer placeholder-transparent h-10 w-full border-b-2 border-gray-300 text-gray-900 text-[14px] focus:outline-none focus:border-orange"
+                    ></textarea>
+                    <label className="absolute left-0 -top-3.5 text-gray-600 text-sm peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-440 peer-placeholder-shown:top-2 transition-all peer-focus:-top-3.5 peer-focus:text-gray-600 peer-focus:text-sm">
+                      Message
+                    </label>
+                  </div>
+
+                  <div className="relative">
+                    <button
+                      htmltype="submit"
+                      className="border-2 border-orange text-orange rounded-md px-4 py-1 hover:bg-orange hover:text-white active:scale-50"
+                      onClick={() => alert("sent")}
+                    >
+                      Submit
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </form>
           </div>
         </div>
-      </form> */}
-
-      <Form
-        name="basic"
-        labelCol={{
-          span: 8,
-        }}
-        wrapperCol={{
-          span: 16,
-        }}
-        style={{
-          maxWidth: 600,
-        }}
-        initialValues={{
-          remember: true,
-        }}
-        onFinish={onFinish}
-        onFinishFailed={onFinishFailed}
-        autoComplete="off"
-      >
-        <Form.Item
-          label="Username"
-          name="username"
-          rules={[
-            {
-              required: true,
-              message: "Please input your username!",
-            },
-          ]}
-        >
-          <Input />
-        </Form.Item>
-
-        <Form.Item
-          label="Password"
-          name="password"
-          rules={[
-            {
-              required: true,
-              message: "Please input your password!",
-            },
-          ]}
-        >
-          <Input.Password />
-        </Form.Item>
-
-        <Form.Item
-          name="remember"
-          valuePropName="checked"
-          wrapperCol={{
-            offset: 8,
-            span: 16,
-          }}
-        ></Form.Item>
-
-        <Form.Item
-          wrapperCol={{
-            offset: 8,
-            span: 16,
-          }}
-        >
-          <Button type="primary" htmlType="submit">
-            Submit
-          </Button>
-        </Form.Item>
-      </Form>
-    </div>
+      </div>
+    </section>
   );
 };
 
-export default Form;
+export default Forms;

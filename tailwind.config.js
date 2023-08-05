@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       colors: {
         orange: "#ff9301",
+        lightOrange: "#fdba74",
         kulrang: "#f7f7ff",
         kulrang_text: "#7b7b7b",
         white: "#ffffff",
