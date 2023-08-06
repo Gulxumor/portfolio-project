@@ -9,17 +9,19 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  transition: all 0.3s linear;
+  transition: all .3s linear;
 }
 
 body {
   scroll-behavior: smooth;
 }
+
 ::-webkit-scrollbar {
+  max-width: 10px;
   width: 5px;
-  }
-  
-  ::-webkit-scrollbar:hover {
+}
+
+::-webkit-scrollbar:hover {
   width: 10px;
 }
 
@@ -27,7 +29,7 @@ body {
   background: orange;
   border-radius: 10px;
 }
-
+/*  */
 ::selection {
   background: black;
   color: white;

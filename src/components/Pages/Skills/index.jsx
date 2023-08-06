@@ -27,9 +27,7 @@ const Skills = () => {
         <div className="w-1/2">
           {skills.map(({ id, degree, skill }) => (
             <div className="flex items-center mb-5" key={id}>
-              <h1 className="font-semibold text-3xl mx-[15px]">
-                {degree}
-              </h1>
+              <h1 className="font-semibold text-3xl mx-[15px]">{degree}</h1>
               <div className="w-full">
                 <div className="mb-1 font-medium">{skill}</div>
                 <div className="w-full bg-gray-200 h-3 mb-4">

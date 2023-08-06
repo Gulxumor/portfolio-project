@@ -12,7 +12,7 @@ import Contact from "./Contact";
 const Pages = () => {
   return (
     <div className="ml-20">
-       <Main />
+      <Main />
       <Hero />
       <div className="bg-kulrang">
         <About />
@@ -21,9 +21,11 @@ const Pages = () => {
       <Experiences />
       <Skills />
       <Portfolio />
-      <Education /> 
-      <Contact />
-      <Footer />
+      <Education />
+      <div className="bg-kulrang">
+        <Contact />
+        <Footer />
+      </div>
     </div>
   );
 };

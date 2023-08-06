@@ -2,6 +2,7 @@ import { BsPersonWorkspace, BsTelephoneOutbound } from "react-icons/bs";
 import { AiFillHome, AiOutlineUser, AiOutlineFileDone } from "react-icons/ai";
 import { styles } from "../../utils/tailwind_variables";
 import "../Pages/Main/main.css";
+import { nav_icons } from "../../utils/socials";
 
 const Sidebar = () => {
   return (
@@ -13,41 +14,15 @@ const Sidebar = () => {
       </div>
 
       <div className="wrapper border-[1px] border-[#e9e9ea] pb-44 pt-20 h-full">
-        <a
-          href="#home"
-          className={`${styles.flex} border-b-[1px] border-[#e9e9ea] py-10 icon w-20 h-10`}
-        >
-          <AiFillHome className={`${styles.sidebar_icons}`} />
-        </a>
-
-        <a
-          href="#about"
-          className={`${styles.flex} border-b-[1px] border-[#e9e9ea] py-10 icon w-20 h-10`}
-        >
-          <AiOutlineUser className={`${styles.sidebar_icons}`} />
-        </a>
-        <a
-          href="#skills"
-          className={`${styles.flex} border-b-[1px] border-[#e9e9ea] py-10 icon w-20 h-10`}
-        >
-          <AiOutlineFileDone className={`${styles.sidebar_icons}`} />
-        </a>
-
-        <a
-          href="#portfolio"
-          className={`${styles.flex} border-b-[1px] border-[#e9e9ea] py-10 icon w-20 h-10`}
-        >
-          <BsPersonWorkspace className={` ${styles.sidebar_icons} text-2x `} />
-        </a>
-
-        <a
-          href="#contact"
-          className={`${styles.flex} border-b-[1px] border-[#e9e9ea] py-10 icon w-20 h-10`}
-        >
-          <BsTelephoneOutbound
-            className={` ${styles.sidebar_icons} text-2x `}
-          />
-        </a>
+        {nav_icons.map(({ icon, href, text }, index) => (
+          <a
+            key={index}
+            href={href}
+            className={`${styles.flex} border-b-[1px] border-[#e9e9ea] py-10 icon w-20 h-10`}
+          >
+            <div className={`${styles.sidebar_icons} ${text}`}>{icon}</div>
+          </a>
+        ))}
       </div>
     </div>
   );

@@ -1,3 +1,4 @@
+import pdf from "../../../utils/resume.pdf";
 import { styles } from "../../../utils/tailwind_variables";
 import img from "../../../assets/images/portfolio-img/photography/main_img.jpg";
 
@@ -6,6 +7,13 @@ import Bio from "./Bio";
 import Socials from "./Bio/social";
 
 const About = () => {
+  const handleDownload = () => {
+    const link = document.createElement("a");
+    link.href = pdf;
+    link.download = "Gulxumor_Erkinjonova_resume";
+    link.click();
+  };
+
   return (
     <section
       className={`${styles.flex} flex-col w-full overflow-hidden relative`}
@@ -44,6 +52,7 @@ const About = () => {
           <Bio />
 
           <button
+            onClick={handleDownload}
             className={`bg-orange text-white rounded-sm py-1 px-2 active:scale-95 mt-3 hover:opacity-70`}
           >
             <a href="img/Gulxumor_Erkinjonova_CV.pdf" download>
