@@ -25,6 +25,9 @@ const About = () => {
             src={img}
             alt="main_img"
             className={`rounded-full w-[350px] h-[350px] border-4 border-orange`}
+            style={{
+              borderRadius: "70% 30% 30% 70% / 60% 40% 60% 40%",
+            }}
           />
 
           <Socials />

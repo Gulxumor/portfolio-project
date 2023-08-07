@@ -12,8 +12,10 @@
   transition: all .3s linear;
 }
 
-body {
+html {
   scroll-behavior: smooth;
+  scroll-behavior: slow;
+    /* For Firefox */
 }
 
 ::-webkit-scrollbar {
@@ -29,7 +31,7 @@ body {
   background: orange;
   border-radius: 10px;
 }
-/*  */
+
 ::selection {
   background: black;
   color: white;
@@ -48,3 +50,12 @@ body {
 }
 
 @keyframes shakeOnHover {}
+.float-btn:before {
+  content: "";
+  border-image: conic-gradient(#ff0052 20deg,
+      transparent 120deg);
+  position: absolute;
+  /* width: 100%;
+  height: 100%; */
+
+}

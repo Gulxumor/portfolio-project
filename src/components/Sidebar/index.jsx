@@ -1,7 +1,5 @@
-import { BsPersonWorkspace, BsTelephoneOutbound } from "react-icons/bs";
-import { AiFillHome, AiOutlineUser, AiOutlineFileDone } from "react-icons/ai";
 import { styles } from "../../utils/tailwind_variables";
-import "../Pages/Main/main.css";
+// import "../Pages/Main/main.css";
 import { nav_icons } from "../../utils/socials";
 
 const Sidebar = () => {

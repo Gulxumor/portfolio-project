@@ -34,11 +34,11 @@ export const social = [
 export const nav_icons = [
   { href: "#home", icon: <AiFillHome />, text: "" },
   { href: "#about", icon: <AiOutlineUser />, text: "" },
+  { href: "#portfolio", icon: <BsPersonWorkspace />, text: "text-2xl" },
   {
-    href: "#portfolio",
+    href: "#skills",
     icon: <AiOutlineFileDone />,
     text: "text-3xl",
   },
-  { href: "#works", icon: <BsPersonWorkspace />, text: "text-2xl" },
   { href: "#contact", icon: <BsTelephoneOutbound />, text: "text-2xl" },
 ];

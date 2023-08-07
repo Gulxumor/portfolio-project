@@ -1,3 +1,5 @@
+import { FloatButton } from "antd";
+import { ArrowUpOutlined } from "@ant-design/icons";
 import ReactTyped from "react-typed";
 import img from "../../../assets/images/logo.png";
 import { styles } from "../../../utils/tailwind_variables";
@@ -6,7 +8,7 @@ const Hero = () => {
   return (
     <section
       className={`${styles.flex} flex-col w-[80%] m-auto flex-wrap h-[100vh]`}
-      id="hero"
+      id="home"
     >
       <div className={`w-full ${styles.flex} flex items-center justify-center`}>
         <div className="mt-[50px]">
@@ -35,7 +37,7 @@ const Hero = () => {
           <button
             className={`bg-orange text-white rounded px-5 py-1 active:scale-95`}
           >
-            <a href="#works">My Works</a>
+            <a href="#portfolio">My Works</a>
           </button>
           <button
             className={`text-orange rounded border border-orange ml-5 px-5 py-1 active:text-red active:scale-95`}
@@ -52,6 +54,10 @@ const Hero = () => {
           />
         </div>
       </div>
+
+      <a href="#main" className="float-btn">
+        <FloatButton icon={<ArrowUpOutlined />} />
+      </a>
     </section>
   );
 };
