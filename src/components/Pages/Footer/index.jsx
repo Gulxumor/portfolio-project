@@ -2,29 +2,28 @@ import { social } from "../../../utils/socials.js";
 
 const Footer = () => {
   return (
-    <div>
-      <hr />
-      <div className="p-5 px-10 flex justify-between">
-        <div className="flex justify-center items-center gap-5">
+    <footer class="bg-white rounded-lg shadow m-4 ">
+      <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
+        <span class="text-sm text-kulrang_text sm:text-center dark:text-gray-400">
+          © 2023 Gulxumor. All Rights Reserved.
+        </span>
+        <ul class="justify-center gap-5 flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
           {social.map(({ href, icon }, index) => (
-            <div className={`w-[32px] h-[32px]`}>
+            <li className={`w-[32px] h-[32px]`}>
               <a
                 href={`https://${href}`}
                 key={index}
                 target="_blank"
                 rel="noreferrer"
-                className="text-2xl text-black hover:text-orange hover:text-3xl"
+                className="text-xl text-black hover:text-orange hover:text-2xl md:mr-6 mr-4"
               >
                 {icon}
               </a>
-            </div>
+            </li>
           ))}
-        </div>
-        <div className="flex">
-          <p>&copy; Gulxumor. All rights are reserved.</p>
-        </div>
+        </ul>
       </div>
-    </div>
+    </footer>
   );
 };
 

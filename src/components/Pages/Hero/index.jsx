@@ -55,8 +55,8 @@ const Hero = () => {
         </div>
       </div>
 
-      <a href="#main" className="float-btn">
-        <FloatButton icon={<ArrowUpOutlined />} />
+      <a href="#main" className={`float-btn`}>
+        <FloatButton icon={<ArrowUpOutlined />} className={`${styles.flex}`} />
       </a>
     </section>
   );

@@ -15,7 +15,7 @@
 html {
   scroll-behavior: smooth;
   scroll-behavior: slow;
-    /* For Firefox */
+  /* For Firefox */
 }
 
 ::-webkit-scrollbar {
@@ -41,21 +41,16 @@ html {
   transform: rotateY(-5deg) translateY(-15px) rotateX(5deg) scale(1);
 }
 
-.shakeOnHover {
-  transform: rotate(40deg);
-}
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
 
-.shakeOnHover:hover {
-  animation: shakeOnHover 1.3s infinite;
-}
+        50% {
+          transform: translateY(30px);
+        }
 
-@keyframes shakeOnHover {}
-.float-btn:before {
-  content: "";
-  border-image: conic-gradient(#ff0052 20deg,
-      transparent 120deg);
-  position: absolute;
-  /* width: 100%;
-  height: 100%; */
-
+        100% {
+          transform: translateY(0);
+        }
 }
