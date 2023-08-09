@@ -114,4 +114,10 @@ export const projects = [
     title: "Weather App",
     desc: "Project created using HTML, CSS, JavaScript and ReactJS",
   },
+  {
+    id: 8,
+    src: portfolio,
+    title: "Portfolio App",
+    desc: "Project created using ReactJS and TailwindCSS",
+  },
 ];

@@ -11,7 +11,7 @@ import Contact from "./Contact";
 
 const Pages = () => {
   return (
-    <div className="ml-20">
+    <div className="ml-20 pages">
       <Main />
       <Hero />
       <div className="bg-kulrang">

@@ -1,3 +1,5 @@
+import { FloatButton } from "antd";
+import { ArrowUpOutlined } from "@ant-design/icons";
 import { styles } from "../../../utils/tailwind_variables";
 import TextSpan from "./TextSpan.js";
 
@@ -7,8 +9,8 @@ const Main = () => {
   return (
     <section className="w-full h-[100vh] overflow-x-hidden" id="main">
       <div className="m-auto w-fit mt-48">
-        <h1 className={`${styles.mainLetter} m-auto w-fit`}>WHO'S</h1>
-        <div className={`${styles.mainLetter} uppercase`}>
+        <h1 className={`${styles.mainLetter} m-auto w-fit main_text`}>WHO'S</h1>
+        <div className={`${styles.mainLetter} uppercase main_text`}>
           {sentence.map((letter, index) => (
             <TextSpan key={index}>
               {letter === " " ? "\u00A0" : letter}
@@ -22,6 +24,9 @@ const Main = () => {
         className={`flex justify-center border-4 border-orange rounded-full w-10 h-16  absolute bottom-1 right-[50%]`}
       >
         <div className="w-2 h-2 bg-orange rounded-full animate-bounce mt-2 " />
+      </a>
+      <a href="#main" className={`float-btn`}>
+        <FloatButton icon={<ArrowUpOutlined />} className={`${styles.flex}`} />
       </a>
     </section>
   );

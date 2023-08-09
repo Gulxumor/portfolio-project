@@ -54,3 +54,87 @@ html {
           transform: translateY(0);
         }
 }
+@media(max-width:375px) {
+  .main_text {
+    font-size: 80px;
+  }
+
+  .hero_top {
+    width: 100vw;
+    text-align: start;
+  }
+
+  .hero_img {
+    display: none;
+  }
+
+  .skills_card {
+    width: 270px;
+  }
+
+  .skills_card h2 {
+    font-size: 12px;
+  }
+
+  .portfolio_wrapper {
+    width: 270px;
+  }
+
+  .portfolio_img {
+    height: 150px;
+  }
+
+  .portfolio_btn {
+    padding: 7px;
+  }
+}
+
+@media(max-width:768px) {
+  .aside {
+    display: none;
+  }
+
+  .pages {
+    margin-left: 0;
+  }
+
+  .main_text {
+    font-size: 100px;
+  }
+
+  .hero_top {
+    width: 100vw;
+    text-align: start;
+  }
+
+  .hero_img {
+    display: none;
+  }
+
+  .skills_card {
+    width: 270px;
+  }
+
+  .skills_card h2 {
+    font-size: 12px;
+  }
+
+  .portfolio_wrapper {
+    width: 270px;
+  }
+
+  .portfolio_img {
+    height: 150px;
+  }
+
+  .portfolio_btn {
+    padding: 7px;
+  }
+
+}
+
+@media(max-width:1024px) {
+  .portfolio_wrapper {
+    width: 300px;
+  }
+}
