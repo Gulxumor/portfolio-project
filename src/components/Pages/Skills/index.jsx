@@ -1,4 +1,3 @@
-import { Card } from "antd";
 import { skills, teaching } from "../../../utils/skills.js";
 
 const Skills = () => {
@@ -11,7 +10,7 @@ const Skills = () => {
         </p>
       </span>
       <div className="flex justify-between flex-wrap">
-        <Card className="bg-kulrang w-[325px] p-8 skills_card">
+        <div className="bg-kulrang w-[325px] p-8 skills_card">
           {teaching.map(({ id, year, major, center, mb }) => (
             <div key={id} style={{ marginBottom: `${mb}px` }}>
               <h2 className="text-kulrang_text text-[15px] font-medium">
@@ -23,7 +22,7 @@ const Skills = () => {
               </h2>
             </div>
           ))}
-        </Card>
+        </div>
         <div className="w-1/2 education_skills">
           {skills.map(({ id, degree, skill }) => (
             <div className="flex items-center mb-5" key={id}>

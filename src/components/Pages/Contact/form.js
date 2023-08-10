@@ -24,32 +24,43 @@ const Forms = () => {
                   <div className="relative">
                     <input
                       type="text"
-                      className="peer placeholder-transparent h-10 w-full border-b-2 border-gray-300 text-gray-900 text-[14px] focus:outline-none focus:border-orange"
-                      placeholder="Enter your Full Name"
-                      required
+                      id="floating_outlined"
+                      className="block px-2.5 pb-2.5 pt-4 w-full text-[20px] text-gray-900 bg-transparent rounded-lg border-2 border-gray-300 dark:text-orange dark:focus:border-orange-500 focus:outline-none focus:ring-0 focus:border-orange-600 peer"
+                      placeholder=" "
                     />
-                    <label className="absolute left-0 -top-3.5 text-gray-600 text-sm peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-440 peer-placeholder-shown:top-2 transition-all peer-focus:-top-3.5 peer-focus:text-gray-600 peer-focus:text-sm">
+                    <label
+                      for="floating_outlined"
+                      className="absolute text-[20px] text-black duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white px-2 peer-focus:px-2 peer-focus:text-orange-600 peer-focus:dark:text-orange-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-1 peer-focus:scale-75 peer-focus:-translate-y-4 left-1"
+                    >
                       Full Name
+                    </label>
+                  </div>
+                  <div className="relative">
+                    <input
+                      type="email"
+                      id="floating_outlined"
+                      className="block px-2.5 pb-2.5 pt-4 w-full text-[20px] text-gray-900 bg-transparent rounded-lg border-2 border-gray-300 dark:text-orange dark:focus:border-orange-500 focus:outline-none focus:ring-0 focus:border-orange-600 peer"
+                      placeholder=" "
+                    />
+                    <label
+                      for="floating_outlined"
+                      className="absolute text-[20px] text-black duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white px-2 peer-focus:px-2 peer-focus:text-orange-600 peer-focus:dark:text-orange-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-1 peer-focus:scale-75 peer-focus:-translate-y-4 left-1"
+                    >
+                      Email
                     </label>
                   </div>
 
                   <div className="relative">
-                    <input
-                      type="email"
-                      className="peer placeholder-transparent h-10 w-full border-b-2 border-gray-300 text-gray-900 text-[14px] focus:outline-none focus:border-orange"
-                      placeholder="Enter your Email address"
-                      required
-                    />
-                    <label className="absolute left-0 -top-3.5 text-gray-600 text-sm peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-440 peer-placeholder-shown:top-2 transition-all peer-focus:-top-3.5 peer-focus:text-gray-600 peer-focus:text-sm">
-                      Email Address
-                    </label>
-                  </div>
-                  <div className="relative">
                     <textarea
-                      required
-                      className="peer placeholder-transparent h-10 w-full border-b-2 border-gray-300 text-gray-900 text-[14px] focus:outline-none focus:border-orange"
-                    ></textarea>
-                    <label className="absolute left-0 -top-3.5 text-gray-600 text-sm peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-440 peer-placeholder-shown:top-2 transition-all peer-focus:-top-3.5 peer-focus:text-gray-600 peer-focus:text-sm">
+                      type="email"
+                      id="floating_outlined"
+                      className="block px-2.5 pb-2.5 pt-4 w-full text-[20px] text-gray-900 bg-transparent rounded-lg border-2 border-gray-300 dark:text-orange dark:focus:border-orange-500 focus:outline-none focus:ring-0 focus:border-orange-600 peer"
+                      placeholder=" "
+                    />
+                    <label
+                      for="floating_outlined"
+                      className="absolute text-[20px] text-black duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white px-2 peer-focus:px-2 peer-focus:text-orange-600 peer-focus:dark:text-orange-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-1 peer-focus:scale-75 peer-focus:-translate-y-4 left-1"
+                    >
                       Message
                     </label>
                   </div>

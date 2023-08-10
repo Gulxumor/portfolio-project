@@ -8,19 +8,19 @@ const Portfolio = () => {
         <span className="animate-pulse absolute w-8 inline-flex h-full rounded-full bg-orange opacity-75"></span>
         <p className="text-4xl ml-3 mt-1 w-full font-medium">Projects</p>
       </span>
-      <div className={`flex-wrap ${styles.flex} gap-1`}>
-        {projects.map(({ id, src, title, desc }) => (
+      <div className={`flex-wrap ${styles.flex} gap-7`}>
+        {projects.map(({ id, src, title, desc, github_link, demo }) => (
           <div
             key={id}
-            className={`portfolio_wrapper max-w-sm bg-white border border-kulrang rounded-lg hover:shadow-2xl dark:bg-kulrang dark:border-gray-700`}
+            className={`portfolio_wrapper max-w-[300px] bg-white rounded-lg hover:shadow-2xl border-2 border-[#f0f0f0]`}
           >
             <img
-              className="rounded-t-lg w-[382px] h-[195px] portfolio_img"
+              className="rounded-t-lg w-[300px] h-[195px] portfolio_img"
               src={src}
               alt="main_img"
             />
             <div className="p-5">
-              <h5 className="mb-2 text-2xl font-bold tracking-tight dark:text-orange">
+              <h5 className="mb-2 text-2xl font-bold tracking-tight">
                 {title}
               </h5>
               <p className="mb-3 font-normal text-kulrang_text dark:text-gray-400">
@@ -28,14 +28,24 @@ const Portfolio = () => {
               </p>
 
               <div className="flex justify-between">
-                <button className="portfolio_btn inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-orange rounded-lg hover:bg-amber-600 focus:ring-4 focus:outline-none focus:ring-amber-200 dark:bg-orange dark:hover:bg-orange dark:focus:ring-amber-500">
+                <a
+                  rel="noreferrer"
+                  href={github_link}
+                  target="_blank"
+                  className="portfolio_btn inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-orange rounded-lg hover:bg-amber-500 focus:outline-none active:scale-110"
+                >
                   Source code
                   <FaGithub className="w-3.5 h-3.5 ml-2" />
-                </button>
-                <button className="portfolio_btn inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-orange rounded-lg hover:bg-amber-600 focus:ring-4 focus:outline-none focus:ring-amber-200 dark:bg-orange dark:hover:bg-orange dark:focus:ring-amber-500">
+                </a>
+                <a
+                  rel="noreferrer"
+                  href={demo}
+                  target="_blank"
+                  className="portfolio_btn inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-gray-700 rounded-lg hover:bg-gray-500 focus:outline-none active:scale-110"
+                >
                   Live Demo
                   <FaTv className="w-3.5 h-3.5 ml-2" />
-                </button>
+                </a>
               </div>
             </div>
           </div>

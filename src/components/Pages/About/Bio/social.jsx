@@ -9,10 +9,8 @@ import {
 
 const Socials = () => {
   return (
-    <div className={`${styles.flex} w-full`}>
-      <div
-        className={`${styles.flex} rounded-full bg-black border-white border-2 w-9 h-9 mx-[5px] absolute mb-8 mr-[130px]`}
-      >
+    <ul className={`${styles.flex} w-full gap-2 mt-5`}>
+      <li className={`${styles.socials}`}>
         <a
           href="https://www.pinterest.com/gulxumorerkinjonova/"
           target={"_blank"}
@@ -20,10 +18,8 @@ const Socials = () => {
         >
           <FaPinterestP color="white" />
         </a>
-      </div>
-      <div
-        className={`${styles.flex} rounded-full bg-black border-white border-2 w-9 h-9 mx-[5px] absolute mb-24 mr-60 `}
-      >
+      </li>
+      <li className={`${styles.socials}`}>
         <a
           href="https://facebook.com/Gulxumor"
           target={"_blank"}
@@ -31,19 +27,15 @@ const Socials = () => {
         >
           <FaFacebookF color="white" />
         </a>
-      </div>
+      </li>
 
-      <div
-        className={`${styles.flex} rounded-full bg-black border-white border-2 w-9 h-9 mx-[5px] mb-3 absolute`}
-      >
+      <li className={`${styles.socials}`}>
         <a href="https://linkedin.com/" target={"_blank"} rel="noreferrer">
           <FaLinkedinIn color="white" />
         </a>
-      </div>
+      </li>
 
-      <div
-        className={`${styles.flex} rounded-full bg-black border-white border-2 w-9 h-9 mx-[5px] absolute mb-8 ml-[130px]`}
-      >
+      <li className={`${styles.socials}`}>
         <a
           href="https://twitter.com/Gulxumorr"
           target={"_blank"}
@@ -51,10 +43,8 @@ const Socials = () => {
         >
           <FaTwitter color="white" />
         </a>
-      </div>
-      <div
-        className={`${styles.flex} rounded-full bg-black border-white border-2 w-9 h-9 mx-[5px] absolute mb-24 ml-60`}
-      >
+      </li>
+      <li className={`${styles.socials}`}>
         <a
           href="https://github.com/Gulxumor"
           target={"_blank"}
@@ -62,8 +52,8 @@ const Socials = () => {
         >
           <FaGithub color="white" />
         </a>
-      </div>
-    </div>
+      </li>
+    </ul>
   );
 };
 

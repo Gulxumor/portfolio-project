@@ -1,6 +1,6 @@
 import pdf from "../../../utils/resume.pdf";
 import { styles } from "../../../utils/tailwind_variables";
-import img from "../../../assets/images/portfolio-img/photography/main_img.jpg";
+import img from "../../../assets/images/main_img.jpg";
 
 import Stripe from "../../generics/Stripe";
 import Bio from "./Bio";
@@ -32,8 +32,8 @@ const About = () => {
 
           <Socials />
 
-          <span className={`${styles.flex} flex-col mt-5`}>
-            <p className="text-xl mt-[5px] font-normal">Front-end Developer</p>
+          <span className={`${styles.flex} flex-col`}>
+            <p className="text-xl my-2 font-normal">Front-end Developer</p>
             <p className="text-3xl font-normal mb-8">Gulxumor Erkinjonova</p>
           </span>
         </div>
