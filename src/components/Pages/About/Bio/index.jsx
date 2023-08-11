@@ -1,7 +1,7 @@
+import { PiGameControllerFill } from "react-icons/pi";
 import {
   FaBookReader,
   FaChartArea,
-  FaGamepad,
   FaGifts,
   FaMailBulk,
   FaPassport,
@@ -35,7 +35,7 @@ const Bio = () => {
         </li>
 
         <li className={`flex py-[8px] items-center text-kulrang_text`}>
-          <FaGamepad color="orange" className="mr-3" />
+          <PiGameControllerFill color="orange" className="mr-3" />
           <span>
             <label className="mr-3">Interests:</label> Coding, Reading
           </span>

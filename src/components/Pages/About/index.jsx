@@ -1,17 +1,25 @@
 import pdf from "../../../utils/resume.pdf";
 import { styles } from "../../../utils/tailwind_variables";
 import img from "../../../assets/images/main_img.jpg";
-
 import Stripe from "../../generics/Stripe";
 import Bio from "./Bio";
 import Socials from "./Bio/social";
+import "./img.css";
 
 const About = () => {
-  const handleDownload = () => {
-    const link = document.createElement("a");
-    link.href = pdf;
-    link.download = "Gulxumor_Erkinjonova_resume";
-    link.click();
+  const onButtonClick = () => {
+    // using JavaScript method to get PDF file
+    fetch(pdf).then((response) => {
+      response.blob().then((blob) => {
+        // Creating new object of PDF file
+        const fileURL = window.URL.createObjectURL(blob);
+        // Setting various property values
+        let link = document.createElement("a");
+        link.href = fileURL;
+        link.download = "Gulxumor_Erkinjonova_resume.pdf";
+        link.click();
+      });
+    });
   };
 
   return (
@@ -21,14 +29,18 @@ const About = () => {
     >
       <div className={`${styles.flex} mb-[100px] flex-wrap`}>
         <div className={`mr-20 ml-5 mt-10`}>
-          <img
-            src={img}
-            alt="main_img"
-            className={`rounded-full w-[350px] h-[350px] border-4 border-orange`}
-            style={{
-              borderRadius: "70% 30% 30% 70% / 60% 40% 60% 40%",
-            }}
-          />
+          <div className="w-[350px] h-[350px] relative">
+            <div className="spin-container">
+              <div className="w-full h-full transition-[border-radius] duration-[1s] ease-[ease-out] animate-[morph_8s_ease-in-out_infinite_both_alternate] absolute overflow-hidden rounded-[60%_40%_30%_70%_/_60%_30%_70%_40%]">
+                <div
+                  style={{
+                    backgroundImage: `url(${img})`,
+                  }}
+                  className={`bg-cover w-[120%] h-[120%] absolute left-[-15%] top-[-10%] `}
+                ></div>
+              </div>
+            </div>
+          </div>
 
           <Socials />
 
@@ -55,12 +67,10 @@ const About = () => {
           <Bio />
 
           <button
-            onClick={handleDownload}
+            onClick={onButtonClick}
             className={`bg-orange text-white rounded-sm py-1 px-2 active:scale-95 mt-3 hover:opacity-70`}
           >
-            <a href="img/Gulxumor_Erkinjonova_CV.pdf" download>
-              Download CV
-            </a>
+            Download CV
           </button>
         </div>
       </div>

@@ -32,7 +32,7 @@ const Education = () => {
       <div className="flex gap-5 flex-wrap mt-20">
         {education.map(({ icon, name, color, width, url, link }, index) => (
           <div
-            className={`w-40 p-2 border border-gray-200 rounded-lg shadow`}
+            className={`w-40 p-2 border border-gray-200 rounded-lg shadow rotate-3`}
             style={{ background: `${color}` }}
             key={index}
           >
