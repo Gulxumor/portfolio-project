@@ -1,31 +1,14 @@
 .moveRight {
-    animation: moveRight 100s linear infinite;
-    transition: all.6s ease 0s;
+    animation: moveRight 2s linear infinite;
 }
 
 .moveLeft {
-    animation: moveLeft 100s linear infinite;
-    transition: all.6s ease 0s;
+    animation: moveLeft 2s linear infinite;
 }
 
-.shake {
-    animation: tilt-shaking 2s linear infinite;
-}
 
-/* 
-.card_wrapper:hover {
-    -moz-animation-play-state: paused;
-    -webkit-animation-play-state: paused;
-    animation-play-state: paused;
-}
+@keyframes moveRight {
 
-.card_wrapper:active {
-    -moz-animation-play-state: paused;
-    -webkit-animation-play-state: paused;
-    animation-play-state: paused;
-} */
-
-@keyframes tilt-shaking {
     0% {
         transform: rotate(0deg);
     }
@@ -47,50 +30,25 @@
     }
 }
 
-@keyframes moveRight {
-
-    0% {
-        left: 25%;
-        transform: translateX(25%);
-    }
-
-    50% {
-        left: -50%;
-        transform: translateX(-50%);
-    }
-
-    70% {
-        left: 75%;
-        transform: translateX(75%);
-    }
-
-    100% {
-        left: -100%;
-        transform: translateX(-100%);
-    }
-
-
-}
-
 @keyframes moveLeft {
     0% {
-        left: -25%;
-        transform: translateX(-25%);
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(-4deg) translateZ(0px);
     }
 
     50% {
-        left: 50%;
-        transform: translateX(50%);
+        transform: rotate(0deg);
     }
 
-    70% {
-        left: -75%;
-        transform: translateX(-75%);
+    75% {
+        transform: rotate(-4deg) translateZ(0px);
     }
 
     100% {
-        left: 100%;
-        transform: translateX(100%);
+        transform: rotate(0deg);
     }
 
 

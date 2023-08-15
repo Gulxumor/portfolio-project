@@ -17,12 +17,12 @@ const Pages = () => {
       <Hero />
       <div className="bg-kulrang">
         <About />
+        <Skills />
+        <Education />
         <Technology />
       </div>
       <Experiences />
-      <Skills />
       <Portfolio />
-      <Education />
       <div className="bg-kulrang">
         <Contact />
         <Footer />
