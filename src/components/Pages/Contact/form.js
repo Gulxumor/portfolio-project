@@ -29,7 +29,7 @@ const Forms = () => {
                       placeholder=" "
                     />
                     <label
-                      for="floating_outlined"
+                      htmlFor="floating_outlined"
                       className="absolute text-[20px] text-black duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white px-2 peer-focus:px-2 peer-focus:text-orange-600 peer-focus:dark:text-orange-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-1 peer-focus:scale-75 peer-focus:-translate-y-4 left-1"
                     >
                       Full Name
@@ -43,7 +43,7 @@ const Forms = () => {
                       placeholder=" "
                     />
                     <label
-                      for="floating_outlined"
+                      htmlFor="floating_outlined"
                       className="absolute text-[20px] text-black duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white px-2 peer-focus:px-2 peer-focus:text-orange-600 peer-focus:dark:text-orange-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-1 peer-focus:scale-75 peer-focus:-translate-y-4 left-1"
                     >
                       Email
@@ -58,7 +58,7 @@ const Forms = () => {
                       placeholder=" "
                     />
                     <label
-                      for="floating_outlined"
+                      htmlFor="floating_outlined"
                       className="absolute text-[20px] text-black duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white px-2 peer-focus:px-2 peer-focus:text-orange-600 peer-focus:dark:text-orange-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-1 peer-focus:scale-75 peer-focus:-translate-y-4 left-1"
                     >
                       Message
