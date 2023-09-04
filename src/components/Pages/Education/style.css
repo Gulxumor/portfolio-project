@@ -1,36 +1,8 @@
-.moveRight {
-    animation: moveRight 2s linear infinite;
+.move {
+    animation: move 2s linear infinite;
 }
 
-.moveLeft {
-    animation: moveLeft 2s linear infinite;
-}
-
-
-@keyframes moveRight {
-
-    0% {
-        transform: rotate(0deg);
-    }
-
-    25% {
-        transform: rotate(4deg) translateZ(0px);
-    }
-
-    50% {
-        transform: rotate(0deg);
-    }
-
-    75% {
-        transform: rotate(4deg) translateZ(0px);
-    }
-
-    100% {
-        transform: rotate(0deg);
-    }
-}
-
-@keyframes moveLeft {
+@keyframes move {
     0% {
         transform: rotate(0deg);
     }
@@ -50,6 +22,4 @@
     100% {
         transform: rotate(0deg);
     }
-
-
 }

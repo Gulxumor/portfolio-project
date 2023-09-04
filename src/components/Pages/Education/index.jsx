@@ -15,7 +15,7 @@ const Education = () => {
         <Marquee autoFill={true} pauseOnHover direction="right">
           {education.map(({ icon, name, color, width, url, link }, index) => (
             <div
-              className={`w-40 p-2 rounded-lg mr-5 moveRight my-1.5`}
+              className={`w-40 p-2 rounded-lg mr-5 move my-1.5`}
               style={{ background: `${color}` }}
               key={index}
             >
@@ -49,7 +49,7 @@ const Education = () => {
         >
           {education.map(({ icon, name, color, width, url, link }, index) => (
             <div
-              className={`w-40 p-2 rounded-lg mr-5 my-1.5 moveLeft`}
+              className={`w-40 p-2 rounded-lg mr-5 my-1.5 move`}
               style={{ background: `${color}` }}
               key={index}
             >

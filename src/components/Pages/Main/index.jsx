@@ -7,7 +7,7 @@ const Main = () => {
   return (
     <section className="relative bg-kulrang">
       <ParticlesBg />
-      <div className="w-full h-[100vh] overflow-x-hidden" id="main">
+      <div className="w-full h-[100vh] overflow-x-hidden bg-fixed" id="main">
         <div className="m-auto w-fit mt-48">
           <h1 className={`${styles.mainLetter} m-auto w-fit main_text`}>
             WHO'S
