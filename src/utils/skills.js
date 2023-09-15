@@ -1,10 +1,12 @@
 import nihol from "../assets/images/projects_img/nihol.jpg";
 import rymo from "../assets/images/projects_img/rymo.jpg";
 import portfolio from "../assets/images/projects_img/portfolio.jpg";
+import new_portfolio from "../assets/images/projects_img/new_portfolio.png";
 import todo from "../assets/images/projects_img/todo.jpg";
 import movie from "../assets/images/projects_img/movie.jpg";
 import weather from "../assets/images/projects_img/weather.jpg";
 import food from "../assets/images/projects_img/food.jpg";
+import furni from "../assets/images/projects_img/furni.png";
 import countries from "../assets/images/projects_img/countries.jpg";
 
 export const skills = [
@@ -107,6 +109,14 @@ export const projects = [
     desc: "Project created using HTML, CSS, JavaScript and ReactJS",
   },
   {
+    id: 8,
+    src: new_portfolio,
+    title: "Portfolio App",
+    github_link: "https://github.com/Gulxumor/portfolio-project",
+    demo: "https://erkinjonova.netlify.app",
+    desc: "Project created using ReactJS and TailwindCSS",
+  },
+  {
     id: 5,
     src: movie,
     title: "Movie App",
@@ -131,11 +141,11 @@ export const projects = [
     desc: "Project created using HTML, CSS, JavaScript and ReactJS",
   },
   {
-    id: 8,
-    src: portfolio,
-    title: "Portfolio App",
-    github_link: "https://github.com/Gulxumor/portfolio-project",
-    demo: "https://erkinjonova.netlify.app",
-    desc: "Project created using ReactJS and TailwindCSS",
+    id: 9,
+    src: furni,
+    title: "Furni.",
+    github_link: "https://github.com/Gulxumor/my-react-project/tree/9-dars/src",
+    demo: "https://furniture-figma.netlify.app/",
+    desc: "Project created using ReactJS",
   },
 ];
