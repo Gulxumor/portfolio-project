@@ -4,7 +4,6 @@ import img from "../../../assets/images/main_img.jpg";
 import Stripe from "../../generics/Stripe";
 import Bio from "./Bio";
 import Socials from "./Bio/social";
-import "./img.css";
 
 const About = () => {
   const onButtonClick = () => {
@@ -31,7 +30,7 @@ const About = () => {
         <div className={`mr-20 ml-5 mt-10`}>
           <div className="w-[350px] h-[350px] relative">
             <div className="spin-container">
-              <div className="w-full h-full transition-[border-radius] duration-[1s] ease-[ease-out] animate-[morph_8s_ease-in-out_infinite_both_alternate] absolute overflow-hidden rounded-[60%_40%_30%_70%_/_60%_30%_70%_40%]">
+              <div className="w-full h-full transition-[border-radius] duration-[1s] ease-[ease-out] animate-[morph_5s_ease-in-out_infinite_both_alternate] absolute overflow-hidden rounded-[60%_40%_30%_70%_/_60%_30%_70%_40%]">
                 <div
                   style={{
                     backgroundImage: `url(${img})`,
@@ -45,15 +44,19 @@ const About = () => {
           <Socials />
 
           <span className={`${styles.flex} flex-col`}>
-            <p className="text-xl my-2 font-normal">Front-end Developer</p>
-            <p className="text-3xl font-normal mb-8">Gulxumor Erkinjonova</p>
+            <p className="text-xl my-[10px] font-normal">Front-end Developer</p>
+            <p className="text-3xl font-normal mb-8 font-gagalin">
+              Gulxumor Erkinjonova
+            </p>
           </span>
         </div>
 
         <div>
           <span className="relative flex h-8 w-8 mb-10">
-            <span className="animate-pulse absolute  inline-flex h-full w-full rounded-full bg-orange opacity-75 "></span>
-            <p className="text-4xl ml-3 mt-2 font-medium">Biography</p>
+            <span className="animate-pulse absolute inline-flex h-full w-full rounded-full bg-orange opacity-75"></span>
+            <p className="text-4xl ml-3 mt-2 font-medium font-gagalin">
+              Biography
+            </p>
           </span>
 
           <p className="w-[660px] mb-5 text-kulrang_text">

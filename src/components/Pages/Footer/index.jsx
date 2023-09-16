@@ -2,7 +2,7 @@ import { social } from "../../../utils/socials.js";
 
 const Footer = () => {
   return (
-    <footer className="bg-white shadow">
+    <footer className="shadow">
       <div className="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
         <span className="text-sm text-kulrang_text sm:text-center dark:text-gray-400">
           © 2023 Gulxumor. All Rights Reserved.

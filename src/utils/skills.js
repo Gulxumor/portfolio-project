@@ -35,11 +35,6 @@ export const skills = [
     degree: "72%",
     skill: "React JS",
   },
-  {
-    id: 5,
-    degree: "60%",
-    skill: "Redux",
-  },
 ];
 
 export const teaching = [
@@ -48,14 +43,12 @@ export const teaching = [
     year: "April 2023 - June 2023",
     major: "Frontend Development",
     center: "AEMA Team",
-    mb: 30,
   },
   {
     id: 1,
     year: "November 2022 - April 2023",
     major: "Frontend Development",
     center: "Webbrain Academy",
-    mb: 30,
   },
 
   {
@@ -63,7 +56,6 @@ export const teaching = [
     year: "April 2023 - June 2023",
     major: "Secondary school",
     center: "53-school",
-    mb: 0,
   },
 ];
 
@@ -74,7 +66,6 @@ export const projects = [
     title: "Nihol App",
     github_link: "https://github.com/Gulxumor/intern-G2",
     demo: "https://nihol.netlify.app/",
-    desc: "Project created using ReactJS and Styled Components",
   },
   {
     id: 1,
@@ -82,7 +73,6 @@ export const projects = [
     title: "Ordering food",
     github_link: "https://github.com/Gulxumor/ordering-food",
     demo: "https://order-food-project.netlify.app",
-    desc: "Project created using ReactJS and Styled Components",
   },
   {
     id: 2,
@@ -90,7 +80,6 @@ export const projects = [
     title: "Find Countries",
     github_link: "https://github.com/Gulxumor/my-react-project/tree/7-dars",
     demo: "https://countries-task7.netlify.app",
-    desc: "Project created using HTML, CSS, JavaScript and ReactJS",
   },
   {
     id: 3,
@@ -98,7 +87,6 @@ export const projects = [
     title: "Rymo - online shop",
     github_link: "https://github.com/Gulxumor/rymo",
     demo: "https://rymo-website.netlify.app",
-    desc: "Project created using HTML, CSS, JavaScript and ReactJS",
   },
   {
     id: 4,
@@ -106,7 +94,6 @@ export const projects = [
     title: "Portfolio",
     github_link: "https://github.com/Gulxumor/portfolio",
     demo: "https://gulxumorerkinjonova.netlify.app",
-    desc: "Project created using HTML, CSS, JavaScript and ReactJS",
   },
   {
     id: 8,
@@ -114,7 +101,6 @@ export const projects = [
     title: "Portfolio App",
     github_link: "https://github.com/Gulxumor/portfolio-project",
     demo: "https://erkinjonova.netlify.app",
-    desc: "Project created using ReactJS and TailwindCSS",
   },
   {
     id: 5,
@@ -122,7 +108,6 @@ export const projects = [
     title: "Movie App",
     github_link: "https://github.com/Gulxumor/figma-projects/tree/movie-app",
     demo: "https://moviee-app-task.netlify.app",
-    desc: "Project created using HTML, CSS, JavaScript and ReactJS",
   },
   {
     id: 6,
@@ -130,7 +115,6 @@ export const projects = [
     title: "Todo App",
     github_link: "https://github.com/Gulxumor/figma-projects/tree/to-do-list",
     demo: "https://additional-todo-task.netlify.app",
-    desc: "Project created using HTML, CSS, JavaScript and ReactJS",
   },
   {
     id: 7,
@@ -138,7 +122,6 @@ export const projects = [
     title: "Weather App",
     github_link: "https://github.com/Gulxumor/figma-projects/tree/weather",
     demo: "https://project-weather-ap.netlify.app",
-    desc: "Project created using HTML, CSS, JavaScript and ReactJS",
   },
   {
     id: 9,
@@ -146,6 +129,5 @@ export const projects = [
     title: "Furni.",
     github_link: "https://github.com/Gulxumor/my-react-project/tree/9-dars/src",
     demo: "https://furniture-figma.netlify.app/",
-    desc: "Project created using ReactJS",
   },
 ];

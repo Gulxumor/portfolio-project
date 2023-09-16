@@ -7,14 +7,16 @@ import {
 
 const Experiences = () => {
   return (
-    <div className="w-[80%] m-auto pt-[100px]">
+    <div className="w-[80%] m-auto">
       <span className="relative flex h-8 mb-10">
         <span className="animate-pulse absolute w-8 inline-flex h-full rounded-full bg-orange opacity-75"></span>
-        <p className="text-4xl ml-3 mt-1 w-full font-medium">Experiences.</p>
+        <p className="text-4xl ml-3 mt-1 w-full font-medium font-gagalin">
+          Experiences.
+        </p>
       </span>
       <VerticalTimeline>
         <VerticalTimelineElement
-          contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
+          contentArrowStyle={{ borderRight: "7px solid rgb(33, 150, 243)" }}
           className="vertical-timeline-element--work"
           contentStyle={{ background: "rgb(33, 150, 243)", color: "#000" }}
           date="March 2023 - Present"

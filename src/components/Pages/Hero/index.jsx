@@ -9,7 +9,7 @@ const Hero = () => {
     >
       <div className="hero_top w-1/2 text-center">
         <h1 className="text-xl text-kulrang_text">Hello there...</h1>
-        <h1 className="text-7xl py-5 font-semibold">
+        <h1 className="text-7xl py-5  font-gagalin">
           Erkinjonova <span className="text-orange">Gulxumor</span>
         </h1>
         <ReactTyped
@@ -30,7 +30,11 @@ const Hero = () => {
         </p>
       </div>
       <div className="w-1/2 ">
-        <img src={logo} alt="logo" className="w-1/2 m-auto rounded-full hero_img" />
+        <img
+          src={logo}
+          alt="logo"
+          className="w-1/2 m-auto rounded-full hero_img"
+        />
       </div>
     </section>
   );

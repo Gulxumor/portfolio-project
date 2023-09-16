@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2? family= Rubik:wght@300;400;500;600;700;800;900 & display=swap');
 @import url('https://fonts.cdnfonts.com/css/new-super-mario-font-u');
+@import url('https://fonts.cdnfonts.com/css/gagalin');
 
 @tailwind base;
 @tailwind components;
@@ -22,10 +23,6 @@ html {
 ::-webkit-scrollbar {
   max-width: 10px;
   width: 5px;
-}
-
-::-webkit-scrollbar:hover {
-  width: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -71,7 +68,7 @@ html {
 
 /* ===================== media =====================*/
 
-@media(max-width:375px) {
+/* @media(max-width:375px) {
   .main_text {
     font-size: 80px;
   }
@@ -154,4 +151,4 @@ html {
   .portfolio_wrapper {
     width: 300px;
   }
-}
+} */

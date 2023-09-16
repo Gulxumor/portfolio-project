@@ -59,8 +59,11 @@ const Bio = () => {
           <FaMailBulk color="orange" className="mr-3" />
           <span>
             <label className="mr-3">Mail:</label>
-            <a href="mailto:erkinjonovagulxumor@gmail.com">
-              erkinjonovagulxumor&#64;gmail.com
+            <a
+              href="mailto:erkinjonovagulxumor@gmail.com"
+              className="hover:underline"
+            >
+              erkinjonovagulxumor@gmail.com
             </a>
           </span>
         </li>
@@ -68,7 +71,9 @@ const Bio = () => {
           <FaPhoneAlt color="orange" className="mr-3" />
           <span>
             <label className="mr-3">Phone:</label>
-            <a href="tel:+998908345600">+998 (90) 834 - 56 - 00</a>
+            <a href="tel:+998908345600" className="hover:underline">
+              +998 (90) 834 - 56 - 00
+            </a>
           </span>
         </li>
       </ul>
