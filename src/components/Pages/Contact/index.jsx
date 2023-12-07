@@ -1,4 +1,4 @@
-import Form from "./Form.js";
+import Form from "./form.js";
 
 const Contact = () => {
   return (

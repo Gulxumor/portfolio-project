@@ -5,7 +5,7 @@ const Footer = () => {
     <footer className="shadow">
       <div className="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
         <span className="text-sm text-kulrang_text sm:text-center dark:text-gray-400">
-          © 2023 Gulxumor. All Rights Reserved.
+          © {new Date().getFullYear()} Gulxumor. All Rights Reserved.
         </span>
         <ul className="justify-center gap-5 flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 sm:mt-0">
           {social.map(({ href, icon }, index) => (

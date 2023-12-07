@@ -16,10 +16,26 @@ const Experiences = () => {
       </span>
       <VerticalTimeline>
         <VerticalTimelineElement
+          contentArrowStyle={{ borderRight: "7px solid rgb(33, 243, 72)" }}
+          className="vertical-timeline-element--work"
+          contentStyle={{ background: "rgb(33, 243, 72)", color: "#000" }}
+          date="September 2023 - Present"
+          iconStyle={{ background: "rgb(33, 243, 72)", color: "#fff" }}
+          icon={<FaReact />}
+        >
+          <h3 className="vertical-timeline-element-title">Freelancer</h3>
+          {/* <h4 className="vertical-timeline-element-subtitle">Tashkent, UZ</h4>
+          <p>• Taught students HTML, CSS, JavaScript, React</p>
+          <p>
+            • Coded using HTML, CSS and JavaScript to develop features for both
+            mobile and desktop platforms
+          </p> */}
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
           contentArrowStyle={{ borderRight: "7px solid rgb(33, 150, 243)" }}
           className="vertical-timeline-element--work"
           contentStyle={{ background: "rgb(33, 150, 243)", color: "#000" }}
-          date="March 2023 - Present"
+          date="March 2023 - September 2023"
           iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
           icon={<FaReact />}
         >

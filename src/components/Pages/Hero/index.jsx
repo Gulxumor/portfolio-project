@@ -1,6 +1,7 @@
 import { styles } from "../../../utils/tailwind_variables";
 import logo from "../../../assets/images/logo.png";
 import ReactTyped from "react-typed";
+
 const Hero = () => {
   return (
     <section
@@ -13,7 +14,7 @@ const Hero = () => {
           Erkinjonova <span className="text-orange">Gulxumor</span>
         </h1>
         <ReactTyped
-          strings={["Developer", "Photographer"]}
+          strings={["Developer", "Photographer", "Copywriter"]}
           typeSpeed={100}
           loop
           backSpeed={30}
