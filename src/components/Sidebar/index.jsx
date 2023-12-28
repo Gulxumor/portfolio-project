@@ -5,7 +5,7 @@ const Sidebar = () => {
   return (
     <aside
       aria-label="Sidebar"
-      className="w-20 fixed top-0 left-0 z-50 bg-transparent select-none aside"
+      className="aside fixed w-24 h-full top-0 left-0 z-[999] bg-white select-none"
     >
       <div
         className={`bg-[orange] text-white text-5xl h-20 ${styles.flex} border-r-[1px] border-orange font-semibold`}
@@ -13,14 +13,14 @@ const Sidebar = () => {
         G
       </div>
 
-      <div className="wrapper border-[1px] border-[#e9e9ea] pb-44 pt-20 h-full">
-        {nav_icons.map(({ icon, href, text }, index) => (
+      <div className="wrapper border-[1px] border-[#e9e9ea] pb-44 pt-20 h-screen">
+        {nav_icons.map(({ icon, href, clas }, index) => (
           <a
             key={index}
             href={href}
-            className={`${styles.flex} border-b-[1px] border-[#e9e9ea] py-10 icon w-20 h-10`}
+            className={`${styles.flex} border-b-[1px] border-[#e9e9ea] py-10 icon h-10 w-full`}
           >
-            <div className={`${styles.sidebar_icons} ${text}`}>{icon}</div>
+            <div className={`${styles.sidebar_icons} ${clas}`}>{icon}</div>
           </a>
         ))}
       </div>

@@ -46,7 +46,7 @@ export const education = [
   },
   {
     icon: <FaReact />,
-    name: "ReactJS",
+    name: "React JS",
     color: "#5ed3f3",
     link: "https://react.dev/",
   },

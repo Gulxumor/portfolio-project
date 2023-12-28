@@ -1,7 +1,7 @@
 import { PiGameControllerFill } from "react-icons/pi";
+import { styles } from "../../../../utils/tailwind_variables";
 import {
   FaBookReader,
-  FaChartArea,
   FaGifts,
   FaMailBulk,
   FaPassport,
@@ -11,69 +11,69 @@ import {
 
 const Bio = () => {
   return (
-    <div className="flex justify-between flex-wrap">
+    <div className="flex justify-between flex-wrap about__bio--text-smaller">
       <ul>
-        <li className={`flex py-[8px] items-center text-kulrang_text`}>
+        <li className={`${styles.socials__Ul}`}>
           <FaGifts color="orange" className="mr-3" />
           <span>
-            <label className="mr-3">Birthday:</label> 06.04.2005
+            <label className="mr-3">Birthday:</label> 06. 04. 2005
           </span>
         </li>
-        <li className={`flex py-[8px] items-center text-kulrang_text`}>
+        <li className={`${styles.socials__Ul}`}>
           <FaPassport color="orange" className="mr-3" />
           <span>
-            <label className="mr-3">Age:</label> 18 years
+            <label className="mr-3">Age:</label>
+            {new Date().getFullYear() - 2005} years
           </span>
         </li>
 
-        <li className={`flex py-[8px] items-center text-kulrang_text`}>
+        <li className={`${styles.socials__Ul}`}>
           <FaSearchLocation color="orange" className="mr-3" />
           <span>
             <label className="mr-3">Address:</label>
-            Fergana
+            Fergana, Uzbekistan
           </span>
         </li>
 
-        <li className={`flex py-[8px] items-center text-kulrang_text`}>
+        <li className={`${styles.socials__Ul}`}>
           <PiGameControllerFill color="orange" className="mr-3" />
           <span>
-            <label className="mr-3">Interests:</label> Coding, Reading
+            <label className="mr-3">Interests:</label> Coding, Learning new
+            things
           </span>
         </li>
       </ul>
       <ul className="mr-5">
-        <li className={`flex py-[8px] items-center text-kulrang_text`}>
+        <li className={`${styles.socials__Ul}`}>
           <FaBookReader color="orange" className="mr-3" />
           <span>
             <label className="mr-3">Study:</label>
-            53-school, Fergana
+            Webbrain Academy
           </span>
         </li>
-        <li className={`flex py-[8px] items-center text-kulrang_text`}>
-          <FaChartArea color="orange" className="mr-3" />
-          <span>
-            <label className="mr-3">Degree:</label> Junior
-          </span>
-        </li>
-        <li className={`flex py-[8px] items-center text-kulrang_text`}>
+        <li className={`${styles.socials__Ul} flex items-center`}>
           <FaMailBulk color="orange" className="mr-3" />
           <span>
             <label className="mr-3">Mail:</label>
-            <a
-              href="mailto:erkinjonovagulxumor@gmail.com"
-              className="hover:underline"
-            >
-              erkinjonovagulxumor@gmail.com
-            </a>
+            <button className="bg-none border-none">
+              <a
+                href="mailto:erkinjonovagulxumor@gmail.com"
+                className="socials__btn"
+              >
+                erkinjonovagulxumor@gmail.com
+              </a>
+            </button>
           </span>
         </li>
-        <li className={`flex py-[8px] items-center text-kulrang_text`}>
+        <li className={`${styles.socials__Ul}`}>
           <FaPhoneAlt color="orange" className="mr-3" />
           <span>
             <label className="mr-3">Phone:</label>
-            <a href="tel:+998908345600" className="hover:underline">
-              +998 (90) 834 - 56 - 00
-            </a>
+            <button className="bg-none border-none">
+              <a href="tel:+998908345600" className="socials__btn">
+                +998 (90) 834 - 56 - 00
+              </a>
+            </button>
           </span>
         </li>
       </ul>

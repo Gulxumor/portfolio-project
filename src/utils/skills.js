@@ -53,9 +53,9 @@ export const teaching = [
 
   {
     id: 2,
-    year: "April 2023 - June 2023",
+    year: "September 2011 - May 2022",
     major: "Secondary school",
-    center: "53-school",
+    center: "53-school, Fergana",
   },
 ];
 
@@ -84,7 +84,7 @@ export const projects = [
   {
     id: 3,
     src: rymo,
-    title: "Rymo - online shop",
+    title: "Rymo - shop",
     github_link: "https://github.com/Gulxumor/rymo",
     demo: "https://rymo-website.netlify.app",
   },
@@ -94,13 +94,6 @@ export const projects = [
     title: "Portfolio",
     github_link: "https://github.com/Gulxumor/portfolio",
     demo: "https://gulxumorerkinjonova.netlify.app",
-  },
-  {
-    id: 8,
-    src: new_portfolio,
-    title: "Portfolio App",
-    github_link: "https://github.com/Gulxumor/portfolio-project",
-    demo: "https://erkinjonova.netlify.app",
   },
   {
     id: 5,
@@ -129,5 +122,12 @@ export const projects = [
     title: "Furni.",
     github_link: "https://github.com/Gulxumor/my-react-project/tree/9-dars/src",
     demo: "https://furniture-figma.netlify.app/",
+  },
+  {
+    id: 8,
+    src: new_portfolio,
+    title: "Portfolio App",
+    github_link: "https://github.com/Gulxumor/portfolio-project",
+    demo: "https://erkinjonova.netlify.app",
   },
 ];

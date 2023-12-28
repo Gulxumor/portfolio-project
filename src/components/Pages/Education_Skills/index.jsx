@@ -1,4 +1,4 @@
-import { skills, teaching } from "../../../utils/skills.js";
+import { teaching } from "../../../utils/skills.js";
 
 const Education_Skills = () => {
   return (
@@ -6,11 +6,11 @@ const Education_Skills = () => {
       <span className="relative flex h-8 mb-20">
         <span className="animate-pulse absolute w-8 inline-flex h-full rounded-full bg-orange opacity-75"></span>
         <p className="text-4xl ml-3 mt-1 w-full font-medium font-gagalin">
-          Education & Skills
+          Education
         </p>
       </span>
       <div className="flex justify-between flex-wrap">
-        <div className="bg-orange w-[325px] p-8 skills_card rounded-lg">
+        <div className="bg-orange w-full p-8 skills_card rounded-lg">
           {teaching.map(({ id, year, major, center }) => (
             <div key={id} className={`flex flex-col gap-2`}>
               <h2 className="text-white text-[15px] font-medium">{year}</h2>
@@ -22,7 +22,7 @@ const Education_Skills = () => {
             </div>
           ))}
         </div>
-        <div className="w-1/2 education_skills">
+        {/* <div className="w-1/2 education_skills">
           {skills.map(({ id, degree, skill }) => (
             <div className="flex items-center mb-5" key={id}>
               <h1 className="font-semibold text-3xl mx-[15px] rounded-md">
@@ -39,7 +39,7 @@ const Education_Skills = () => {
               </div>
             </div>
           ))}
-        </div>
+        </div> */}
       </div>
     </section>
   );

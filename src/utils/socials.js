@@ -22,7 +22,7 @@ export const social = [
     icon: <FaFacebook />,
   },
   {
-    href: "twitter.com/",
+    href: "twitter.com/Gulxumorr",
     icon: <FaTwitter />,
   },
   {
@@ -32,13 +32,25 @@ export const social = [
 ];
 
 export const nav_icons = [
-  { href: "#home", icon: <AiFillHome />, text: "" },
-  { href: "#about", icon: <AiOutlineUser />, text: "" },
-  { href: "#portfolio", icon: <BsPersonWorkspace />, text: "text-2xl" },
+  { href: "#home", icon: <AiFillHome />, text: "Home", clas: "" },
+  { href: "#about", icon: <AiOutlineUser />, text: "About", clas: "" },
   {
     href: "#skills",
     icon: <AiOutlineFileDone />,
-    text: "text-3xl",
+    text: "Skills",
+    clas: "text-3xl",
   },
-  { href: "#contact", icon: <BsTelephoneOutbound />, text: "text-2xl" },
+  {
+    href: "#portfolio",
+    icon: <BsPersonWorkspace />,
+    text: "Portfolio",
+    clas: "text-2xl",
+  },
+
+  {
+    href: "#contact",
+    icon: <BsTelephoneOutbound />,
+    text: "Contact",
+    clas: "text-2xl",
+  },
 ];
