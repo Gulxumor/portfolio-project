@@ -7,6 +7,7 @@ export const ru = {
     gulxumor: "Gulxumor ?",
   },
   navbar: {
+    home:"Dom",
     about: "About",
     skills: "Навыки",
     portfolio: "портфолио",
@@ -14,6 +15,7 @@ export const ru = {
   },
   hero: {
     hello: "Привет...",
+    myName: "Menya zavud ",
     developer: "Разработчик",
     copywriter: "Копирайтер",
     photographer: "фотограф",
@@ -56,6 +58,7 @@ export const ru = {
     intern_desc2: `• Создавал веб-сайты, совместимые с несколькими браузерами. • Поддерживал связь между маркетингом и ИТ в проектах веб-разработки, интегрируя интерфейсные ресурсы с серверными системами.`,
   },
   portfolio: {
+    projects: "Projects",
     source: "Исходный код",
     demo: "Живая демонстрация",
   },
@@ -74,6 +77,11 @@ export const ru = {
   },
   edu: {
     title: "Образование",
+    wba: "November 2022 - April 2023",
+    school: "September 2011 - May 2022",
+    secondary: "Secondary school",
+    school_place: "53-school, Fergana",
+    frontend_dev: "Frontend Development",
   },
   footer: {
     made_with: "Сделано с",

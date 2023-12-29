@@ -1,16 +1,18 @@
 import Marquee from "react-fast-marquee";
 import { FaGithub, FaTv } from "react-icons/fa";
 import { projects } from "../../../utils/skills";
+import { useTranslation } from "react-i18next";
 import { styles } from "../../../utils/tailwind_variables";
 
 const Portfolio = () => {
+  const { t } = useTranslation();
   return (
     <section className="overflow-x-hidden" id="portfolio">
       <div className="w-[80%] mx-auto mt-20 flex flex-col justify-center">
         <span className="relative flex h-8 mb-20">
           <span className="animate-pulse absolute w-8 inline-flex h-full rounded-full bg-orange opacity-75"></span>
           <p className="text-4xl ml-3 mt-1 w-full font-medium font-gagalin">
-            Projects
+            {t("portfolio.projects")}
           </p>
         </span>
         <Marquee
@@ -40,7 +42,7 @@ const Portfolio = () => {
                     target="_blank"
                     className={`${styles.portfolio_btn} mt-1 bg-orange rounded-lg hover:bg-amber-500 `}
                   >
-                    Source code
+                    {t("portfolio.source")}
                     <FaGithub className="w-3.5 h-3.5 ml-2" />
                   </a>
                   <a
@@ -49,7 +51,7 @@ const Portfolio = () => {
                     target="_blank"
                     className={`${styles.portfolio_btn} bg-gray-700 rounded-lg hover:bg-gray-500 `}
                   >
-                    Live Demo
+                    {t("portfolio.demo")}
                     <FaTv className="w-3.5 h-3.5 ml-2" />
                   </a>
                 </div>

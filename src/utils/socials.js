@@ -7,6 +7,7 @@ import {
   FaTelegram,
   FaTwitter,
 } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
 
 export const social = [
   {
@@ -31,26 +32,35 @@ export const social = [
   },
 ];
 
-export const nav_icons = [
-  { href: "#home", icon: <AiFillHome />, text: "Home", clas: "" },
-  { href: "#about", icon: <AiOutlineUser />, text: "About", clas: "" },
-  {
-    href: "#skills",
-    icon: <AiOutlineFileDone />,
-    text: "Skills",
-    clas: "text-3xl",
-  },
-  {
-    href: "#portfolio",
-    icon: <BsPersonWorkspace />,
-    text: "Portfolio",
-    clas: "text-2xl",
-  },
+export const useNavbar = () => {
+  const { t } = useTranslation();
+  const nav_icons = () => [
+    { href: "#home", icon: <AiFillHome />, text: t("navbar.home"), clas: "" },
+    {
+      href: "#about",
+      icon: <AiOutlineUser />,
+      text: t("navbar.about"),
+      clas: "",
+    },
+    {
+      href: "#skills",
+      icon: <AiOutlineFileDone />,
+      text: t("navbar.skills"),
+      clas: "text-3xl",
+    },
+    {
+      href: "#portfolio",
+      icon: <BsPersonWorkspace />,
+      text: t("navbar.portfolio"),
+      clas: "text-2xl",
+    },
 
-  {
-    href: "#contact",
-    icon: <BsTelephoneOutbound />,
-    text: "Contact",
-    clas: "text-2xl",
-  },
-];
+    {
+      href: "#contact",
+      icon: <BsTelephoneOutbound />,
+      text: t("navbar.contact"),
+      clas: "text-2xl",
+    },
+  ];
+  return { nav_icons };
+};

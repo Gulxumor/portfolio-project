@@ -1,13 +1,22 @@
+import i18next from "i18next";
+import { useEffect } from "react";
 import Pages from "../components/Pages";
+import { initReactI18next } from "react-i18next";
+import { uz } from "../utils/locale/uz/translation.js";
+import { en } from "../utils/locale/en/translation.js";
+import { ru } from "../utils/locale/ru/translation.js";
+import { ar } from "../utils/locale/ar/translation.js";
+import { tr } from "../utils/locale/tr/translation.js";
+import { kr } from "../utils/locale/kr/translation.js";
 
 const Root = () => {
-  let token = JSON.stringify(localStorage.getItem("token"));
+  // let token = JSON.stringify(localStorage.getItem("token"));
 
   //! language ni localstorage ga set qilish
   useEffect(() => {
     if (!localStorage.getItem("locale")) {
       localStorage.setItem("locale", "en");
-      // window.location.reload();
+      window.location.reload();
     }
   }, []);
 

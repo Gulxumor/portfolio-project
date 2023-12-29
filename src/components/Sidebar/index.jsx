@@ -1,7 +1,8 @@
 import { styles } from "../../utils/tailwind_variables";
-import { nav_icons } from "../../utils/socials";
+import { useNavbar } from "../../utils/socials";
 
 const Sidebar = () => {
+  const { nav_icons } = useNavbar();
   return (
     <aside
       aria-label="Sidebar"
@@ -14,7 +15,7 @@ const Sidebar = () => {
       </div>
 
       <div className="wrapper border-[1px] border-[#e9e9ea] pb-44 pt-20 h-screen">
-        {nav_icons.map(({ icon, href, clas }, index) => (
+        {nav_icons().map(({ icon, href, clas }, index) => (
           <a
             key={index}
             href={href}

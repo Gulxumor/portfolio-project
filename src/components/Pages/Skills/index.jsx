@@ -2,8 +2,10 @@ import "./style.css";
 import Marquee from "react-fast-marquee";
 import { education } from "../../../utils/educations";
 import { styles } from "../../../utils/tailwind_variables";
+import { useTranslation } from "react-i18next";
 
 const Skills = () => {
+  const { t } = useTranslation();
   return (
     <section id="skills" className={``}>
       <div
@@ -12,7 +14,7 @@ const Skills = () => {
         <span className="relative flex h-8 mb-20 skills__mainText--bottom">
           <span className="animate-pulse absolute w-8 inline-flex h-full rounded-full bg-orange opacity-75"></span>
           <p className="text-4xl ml-3 mt-1 w-full font-medium font-gagalin">
-            Skills
+            {t("navbar.skills")}
           </p>
         </span>
 

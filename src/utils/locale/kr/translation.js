@@ -7,6 +7,7 @@ export const kr = {
     gulxumor: "Gulxumor ?",
   },
   navbar: {
+    home:"home",
     about: "About",
     skills: "Skills",
     portfolio: "Portfolio",
@@ -14,6 +15,7 @@ export const kr = {
   },
   hero: {
     hello: "Hello there...",
+    myName: "My name is ",
     developer: "Developer",
     copywriter: "Copywriter",
     photographer: "Photographer",
@@ -65,6 +67,7 @@ export const kr = {
               integrating front-end assets to back-end systems`,
   },
   portfolio: {
+    projects: "Projects",
     source: "Source code",
     demo: "Live Demo",
   },
@@ -83,6 +86,11 @@ export const kr = {
   },
   edu: {
     title: "Education",
+    wba: "November 2022 - April 2023",
+    school: "September 2011 - May 2022",
+    secondary: "Secondary school",
+    school_place: "53-school, Fergana",
+    frontend_dev: "Frontend Development",
   },
   footer: {
     made_with: "Made with",

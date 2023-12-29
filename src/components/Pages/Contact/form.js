@@ -1,7 +1,9 @@
 import ReactTyped from "react-typed";
+import { useTranslation } from "react-i18next";
 import { styles } from "../../../utils/tailwind_variables";
 
 const Forms = () => {
+  const { t } = useTranslation();
   return (
     <section>
       <div className="py-4 flex flex-col justify-center sm:py-12 wrap">
@@ -20,7 +22,7 @@ const Forms = () => {
                   backSpeed={50}
                   typeSpeed={100}
                   showCursor={true}
-                  strings={["Let's get in touch!"]}
+                  strings={[t("contact.get_touch")]}
                   className={`text-3xl text-orange font-medium form--text-smaller`}
                 />
               </div>
@@ -40,7 +42,7 @@ const Forms = () => {
                       htmlFor="floating_outlined"
                       className={`${styles.form__label}`}
                     >
-                      Full Name
+                      {t("contact.fullName")}
                     </label>
                   </div>
 
@@ -57,7 +59,7 @@ const Forms = () => {
                       htmlFor="floating_outlined"
                       className={`${styles.form__label}`}
                     >
-                      Email
+                      {t("contact.email")}
                     </label>
                   </div>
 
@@ -74,7 +76,7 @@ const Forms = () => {
                       htmlFor="floating_outlined"
                       className={`${styles.form__label}`}
                     >
-                      Message
+                      {t("contact.msg")}
                     </label>
                   </div>
 
@@ -83,7 +85,7 @@ const Forms = () => {
                       htmltype="submit"
                       className="border-2 border-orange text-orange rounded-md px-4 py-1 hover:bg-orange hover:text-white active:scale-95"
                     >
-                      Submit
+                      {t("contact.submit")}
                     </button>
                   </div>
                 </div>

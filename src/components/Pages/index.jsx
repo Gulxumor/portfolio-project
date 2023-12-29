@@ -12,7 +12,6 @@ import Experiences from "./Experiences";
 // import EducationSkills from "./Education_Skills";
 import { BsFillArrowUpCircleFill } from "react-icons/bs";
 
-// * navbar= mediasi to'liq emas, dropdown qo'shish kerak
 // * BsFillArrowUpCircleFill main sectionda chiqmasligi kerak. i could not do it. Ask google tog'a
 
 const Pages = () => {

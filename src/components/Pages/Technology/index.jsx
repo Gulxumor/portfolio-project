@@ -1,18 +1,16 @@
-import { FaLaptop, FaMobile } from "react-icons/fa";
 import Card from "../../generics/Card";
+import { useTranslation } from "react-i18next";
+import { FaLaptop, FaMobile } from "react-icons/fa";
 import { styles } from "../../../utils/tailwind_variables";
-import Stripe from "../../generics/Stripe";
-
-const desc =
-  "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam officiis vero aliquid fuga esse minima sit, adipisci ad nesciunt nobis.";
 
 const Technology = () => {
+  const { t } = useTranslation();
   return (
     <section className="w-[80%] m-auto">
       <span className="relative flex h-8 mb-10">
         <span className="animate-pulse absolute w-8 inline-flex h-full rounded-full bg-orange opacity-75"></span>
         <p className="text-4xl ml-3 mt-1 w-full font-medium font-gagalin">
-          What I Do ?
+          {t("tech.what_i_do")}
         </p>
       </span>
       <div className={`${styles.flex} justify-around flex-wrap`}>
@@ -24,8 +22,8 @@ const Technology = () => {
               <FaMobile className="text-slate-400" />
             </div>
           }
-          title="Web Design"
-          desc={desc}
+          title={t("tech.design")}
+          desc={t("tech.desc")}
         />
         <Card
           icon={
@@ -35,11 +33,10 @@ const Technology = () => {
               <FaLaptop className="text-slate-400" />
             </div>
           }
-          title="Web Development"
-          desc={desc}
+          title={t("tech.dev")}
+          desc={t("tech.desc")}
         />
       </div>
-      <Stripe />
     </section>
   );
 };

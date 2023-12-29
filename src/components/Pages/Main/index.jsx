@@ -1,16 +1,18 @@
 import { styles } from "../../../utils/tailwind_variables";
 import TextSpan from "./TextSpan.js";
 import ParticlesBg from "./particlesBg.js";
+import { useTranslation } from "react-i18next";
 const sentence = "Gulxumor ?".split("");
 
 const Main = () => {
+  const { t } = useTranslation();
   return (
     <section className="relative bg-white">
       <ParticlesBg />
       <div className="w-full h-[100vh] overflow-x-hidden bg-fixed" id="main">
         <div className="m-auto w-fit mt-48">
           <h1 className={`${styles.mainLetter} m-auto w-fit main_text`}>
-            WHO'S
+            {t("main.who")}
           </h1>
           <div className={`${styles.mainLetter} uppercase main_text`}>
             {sentence.map((letter, index) => (

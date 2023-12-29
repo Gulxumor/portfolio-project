@@ -1,11 +1,14 @@
 // import i18next from "i18next";
 import { useState } from "react";
 import { BsMenuButton } from "react-icons/bs";
-import { nav_icons } from "../../utils/socials";
+import { useNavbar } from "../../utils/socials";
 import logo from "../../assets/images/logo.png";
 import { styles } from "../../utils/tailwind_variables";
+import i18next from "i18next";
 
 const Navbar = () => {
+  const { nav_icons } = useNavbar();
+
   const [openLinks, setOpenLinks] = useState();
 
   const toggleNavbar = () => {
@@ -19,9 +22,9 @@ const Navbar = () => {
         className={`${openLinks === true ? "hidden" : "visible"}`}
         defaultValue={localStorage.getItem("locale")}
         onChange={(e) => {
-          // i18next.changeLanguage(e.target.value);
+          i18next.changeLanguage(e.target.value);
           localStorage.setItem("locale", e.target.value);
-          // window.location.reload();
+          window.location.reload();
         }}
       >
         <option value="uz">O'zbek</option>
@@ -42,7 +45,7 @@ const Navbar = () => {
           openLinks !== true ? "hidden" : "visible"
         }`}
       >
-        {nav_icons.map(({ href, text }, index) => (
+        {nav_icons().map(({ href, text }, index) => (
           <ul className="" key={index}>
             <li>
               <a

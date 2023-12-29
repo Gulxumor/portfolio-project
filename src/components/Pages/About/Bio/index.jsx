@@ -1,5 +1,6 @@
 import { PiGameControllerFill } from "react-icons/pi";
 import { styles } from "../../../../utils/tailwind_variables";
+import { useTranslation } from "react-i18next";
 import {
   FaBookReader,
   FaGifts,
@@ -10,36 +11,38 @@ import {
 } from "react-icons/fa";
 
 const Bio = () => {
+  const { t } = useTranslation();
   return (
     <div className="flex justify-between flex-wrap about__bio--text-smaller">
       <ul>
         <li className={`${styles.socials__Ul}`}>
           <FaGifts color="orange" className="mr-3" />
           <span>
-            <label className="mr-3">Birthday:</label> 06. 04. 2005
+            <label className="mr-3">{t("about.bio.birthday")}:</label> 06. 04.
+            2005
           </span>
         </li>
         <li className={`${styles.socials__Ul}`}>
           <FaPassport color="orange" className="mr-3" />
           <span>
-            <label className="mr-3">Age:</label>
-            {new Date().getFullYear() - 2005} years
+            <label className="mr-3">{t("about.bio.age")}:</label>
+            {new Date().getFullYear() - 2005} {t("about.bio.years")}
           </span>
         </li>
 
         <li className={`${styles.socials__Ul}`}>
           <FaSearchLocation color="orange" className="mr-3" />
           <span>
-            <label className="mr-3">Address:</label>
-            Fergana, Uzbekistan
+            <label className="mr-3">{t("about.bio.address")}:</label>
+            {t("about.bio.fullAddress")}
           </span>
         </li>
 
         <li className={`${styles.socials__Ul}`}>
           <PiGameControllerFill color="orange" className="mr-3" />
           <span>
-            <label className="mr-3">Interests:</label> Coding, Learning new
-            things
+            <label className="mr-3">{t("about.bio.interests")}:</label>
+            {t("about.bio.interests_desc")}
           </span>
         </li>
       </ul>
@@ -47,14 +50,14 @@ const Bio = () => {
         <li className={`${styles.socials__Ul}`}>
           <FaBookReader color="orange" className="mr-3" />
           <span>
-            <label className="mr-3">Study:</label>
-            Webbrain Academy
+            <label className="mr-3">{t("about.bio.study")}:</label>
+            {t("about.bio.study_place")}
           </span>
         </li>
         <li className={`${styles.socials__Ul} flex items-center`}>
           <FaMailBulk color="orange" className="mr-3" />
           <span>
-            <label className="mr-3">Mail:</label>
+            <label className="mr-3">{t("about.bio.mail")}:</label>
             <button className="bg-none border-none">
               <a
                 href="mailto:erkinjonovagulxumor@gmail.com"
@@ -68,7 +71,7 @@ const Bio = () => {
         <li className={`${styles.socials__Ul}`}>
           <FaPhoneAlt color="orange" className="mr-3" />
           <span>
-            <label className="mr-3">Phone:</label>
+            <label className="mr-3">{t("about.bio.phone")}:</label>
             <button className="bg-none border-none">
               <a href="tel:+998908345600" className="socials__btn">
                 +998 (90) 834 - 56 - 00

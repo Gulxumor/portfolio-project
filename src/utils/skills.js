@@ -1,13 +1,14 @@
-import nihol from "../assets/images/projects_img/nihol.jpg";
+import { useTranslation } from "react-i18next";
 import rymo from "../assets/images/projects_img/rymo.jpg";
-import portfolio from "../assets/images/projects_img/portfolio.jpg";
-import new_portfolio from "../assets/images/projects_img/new_portfolio.png";
+import food from "../assets/images/projects_img/food.jpg";
 import todo from "../assets/images/projects_img/todo.jpg";
+import furni from "../assets/images/projects_img/furni.png";
+import nihol from "../assets/images/projects_img/nihol.jpg";
 import movie from "../assets/images/projects_img/movie.jpg";
 import weather from "../assets/images/projects_img/weather.jpg";
-import food from "../assets/images/projects_img/food.jpg";
-import furni from "../assets/images/projects_img/furni.png";
+import portfolio from "../assets/images/projects_img/portfolio.jpg";
 import countries from "../assets/images/projects_img/countries.jpg";
+import new_portfolio from "../assets/images/projects_img/new_portfolio.png";
 
 export const skills = [
   {
@@ -37,27 +38,31 @@ export const skills = [
   },
 ];
 
-export const teaching = [
-  {
-    id: 0,
-    year: "April 2023 - June 2023",
-    major: "Frontend Development",
-    center: "AEMA Team",
-  },
-  {
-    id: 1,
-    year: "November 2022 - April 2023",
-    major: "Frontend Development",
-    center: "Webbrain Academy",
-  },
+export function useEducation() {
+  const { t } = useTranslation();
+  const teaching = () => [
+    {
+      id: 0,
+      year: t("experiences.intern_time"),
+      major: t("edu.frontend_dev"),
+      center: "AEMA Team",
+    },
+    {
+      id: 1,
+      year: t("edu.wba"),
+      major: t("edu.frontend_dev"),
+      center: "Webbrain Academy",
+    },
 
-  {
-    id: 2,
-    year: "September 2011 - May 2022",
-    major: "Secondary school",
-    center: "53-school, Fergana",
-  },
-];
+    {
+      id: 2,
+      year: t("edu.school"),
+      major: t("edu.secondary"),
+      center: t("edu.school_place"),
+    },
+  ];
+  return { teaching };
+}
 
 export const projects = [
   {

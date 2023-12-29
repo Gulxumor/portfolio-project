@@ -4,8 +4,10 @@ import pdf from "../../../utils/resume.pdf";
 // import Stripe from "../../generics/Stripe";
 import img from "../../../assets/images/main_img.jpg";
 import { styles } from "../../../utils/tailwind_variables";
+import { useTranslation } from "react-i18next";
 
 const About = () => {
+  const { t } = useTranslation();
   const onButtonClick = () => {
     // using JavaScript method to get PDF file
     fetch(pdf).then((response) => {
@@ -43,10 +45,10 @@ const About = () => {
 
             <span className={`${styles.flex} flex-col`}>
               <p className="text-xl my-[10px] font-normal">
-                Front-end Developer
+                {t("about.frontend_dev")}
               </p>
               <p className="text-3xl font-normal mb-8 font-gagalin about__text--smaller">
-                Gulxumor Erkinjonova
+                {t("fullName")}
               </p>
             </span>
           </div>
@@ -55,17 +57,14 @@ const About = () => {
             <span className="relative flex h-8 w-8 mb-10">
               <span className="animate-pulse absolute inline-flex h-full w-full rounded-full bg-orange opacity-75"></span>
               <p className="text-4xl ml-3 mt-2 font-medium font-gagalin">
-                Biography
+                {t("about.biography")}
               </p>
             </span>
 
             <p className="w-[660px] mb-5 text-kulrang_text about__biography--width">
-              Assalamu alaykum! My name is
-              <span className="text-orange"> Gulxumor Erkinjonova</span>. My job
-              is a Frontend Developer, and I'm very passionate and dedicated to
-              my work. I have been involved in many real projects. I have
-              acquired the skills and knowledge necessary to make projects a
-              success.
+              {t("hero.hello")} {t("hero.myName")}
+              <span className="text-orange"> {t("fullName")}</span>.{" "}
+              {t("about.about_job")}
             </p>
 
             <Bio />
@@ -74,7 +73,7 @@ const About = () => {
               onClick={onButtonClick}
               className={`bg-orange text-white rounded-sm py-2 px-3 active:scale-95 mt-3 hover:opacity-70`}
             >
-              Download CV
+              {t("about.download_CV")}
             </button>
           </div>
         </div>

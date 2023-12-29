@@ -7,6 +7,7 @@ export const ar = {
     gulxumor: "Gulxumor ?",
   },
   navbar: {
+    home:"bayt",
     about: "عن",
     skills: "مهارات",
     portfolio: "مَلَفّ",
@@ -14,6 +15,7 @@ export const ar = {
   },
   hero: {
     hello: "أهلاً بك...",
+    myName: "My name is ",
     developer: "مطور",
     copywriter: "مؤلف الإعلانات",
     photographer: "مصور فوتوغرافي",
@@ -56,6 +58,7 @@ export const ar = {
     intern_desc2: `• تم إنتاج مواقع ويب متوافقة مع متصفحات متعددة • تم التنسيق بين التسويق وتكنولوجيا المعلومات في مشاريع تطوير الويب التي تعمل على دمج أصول الواجهة الأمامية مع الأنظمة الخلفية`,
   },
   portfolio: {
+    projects: "Projects",
     source: "مصدر الرمز",
     demo: "عرض حي",
   },
@@ -74,6 +77,11 @@ export const ar = {
   },
   edu: {
     title: "تعليم",
+    wba: "November 2022 - April 2023",
+    school: "September 2011 - May 2022",
+    secondary: "Secondary school",
+    school_place: "53-school, Fergana",
+    frontend_dev: "Frontend Development",
   },
   footer: {
     made_with: "مصنوع من",

@@ -3,17 +3,19 @@ export const tr = {
   erkinjonova: "Erkinjonova",
   fullName: " Gulxumor Erkinjonova",
   main: {
-    who: "WHO'S",
+    who: "KIM",
     gulxumor: "Gulxumor ?",
   },
   navbar: {
-    about: "About",
+    home:"Ev",
+    about: "Hakkinda",
     skills: "Skills",
     portfolio: "Portfolio",
     contact: "Contact",
   },
   hero: {
-    hello: "Hello there...",
+    hello: "Selam aleykum...",
+    myName: "Adım",
     developer: "Developer",
     copywriter: "Copywriter",
     photographer: "Photographer",
@@ -65,6 +67,7 @@ export const tr = {
               integrating front-end assets to back-end systems`,
   },
   portfolio: {
+    projects: "Projects",
     source: "Source code",
     demo: "Live Demo",
   },
@@ -83,6 +86,11 @@ export const tr = {
   },
   edu: {
     title: "Education",
+    wba: "November 2022 - April 2023",
+    school: "September 2011 - May 2022",
+    secondary: "Secondary school",
+    school_place: "53-school, Fergana",
+    frontend_dev: "Frontend Development",
   },
   footer: {
     made_with: "Made with",
