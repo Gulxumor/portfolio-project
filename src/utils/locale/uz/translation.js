@@ -7,7 +7,7 @@ export const uz = {
     gulxumor: "Gulxumor ?",
   },
   navbar: {
-    home:"Uy",
+    home: "Uy",
     about: "Haqida",
     skills: "Qobiliyatlar",
     portfolio: "Portfolio",
@@ -19,19 +19,12 @@ export const uz = {
     developer: "Dasturchi",
     copywriter: "Kopirayter",
     photographer: "Suratkash",
-    job_desc: `I build the front-end portion of websites and web applications - the
-            part users see and interact with. I create websites and applications
-            using web languages such as HTML, CSS, and JavaScript that allow
-            users to access and interact with the site or app all the time,
-            people think that you're busy.`,
+    job_desc: `Men veb-saytlar va veb-ilovalarning old qismini yarataman - bu qismi foydalanuvchilar ko'radi va ular bilan o'zaro. Men veb-saytlar va ilovalar yarataman ruxsat beruvchi HTML, CSS va JavaScript kabi veb-tillardan foydalanish foydalanuvchilar har doim sayt yoki ilovaga kirishlari va ular bilan ishlashlari, odamlar sizni band deb o'ylashadi.`,
   },
   about: {
     frontend_dev: "Front-end Dasturchisi",
     biography: "Biografiya",
-    about_job: `My job is a Frontend Developer, and I'm very passionate and dedicated to
-              my work. I have been involved in many real projects. I have
-              acquired the skills and knowledge necessary to make projects a
-              success.`,
+    about_job: `Mening ishim Frontend Developer bo‘lib, men o‘z ishimga juda ishtiyoqli va sodiqman. Men ko'plab haqiqiy loyihalarda ishtirok etganman. Loyihalarni muvaffaqiyatli amalga oshirish uchun zarur bo'lgan ko'nikma va bilimlarga ega bo'ldim.`,
     download_CV: "CV ni yuklash",
     bio: {
       birthday: "Tug'ilgan kun",
@@ -57,14 +50,12 @@ export const uz = {
     mentor_loc: "Toshkent, UZ",
     mentor_time: "Mart 2023 - Sentabr 2023",
     mentor_desc1: `• O'quvchilarga HTML, CSS, JavaScript, React'dan ta'lim berdi`,
-    mentor_desc2: ` • Coded using HTML, CSS and JavaScript to develop features for
-              both mobile and desktop platforms`,
+    mentor_desc2: `• Mobil va ish stoli platformalari uchun xususiyatlarni ishlab chiqish uchun HTML, CSS va JavaScript yordamida kod yozgan`,
     intern: "Front-end Intern",
     intern_loc: "Namangan, UZ",
     intern_time: "Aprel 2023 - Iyun 2023",
-    intern_desc1: `• Produced websites compatible with multiple browsers`,
-    intern_desc2: ` • Liaised between marketing and IT on web development projects
-              integrating front-end assets to back-end systems`,
+    intern_desc1: `• Bir nechta brauzerlar bilan mos veb-saytlar ishlab chiqarilgan`,
+    intern_desc2: `• Veb-ishlab chiqish loyihalari bo'yicha marketing va IT o'rtasida front-end aktivlarini back-end tizimlarga integratsiyalashgan holda bog'langan.`,
   },
   portfolio: {
     projects: "Proyektlar",
@@ -72,7 +63,7 @@ export const uz = {
     demo: "Jonli ko'rmoq",
   },
   contact: {
-    get_touch: "Let's get in touch!",
+    get_touch: "Keling, bog'lanamiz!",
     fullName: "Ism-familiya",
     email: "Email manzil",
     msg: "Habar",
