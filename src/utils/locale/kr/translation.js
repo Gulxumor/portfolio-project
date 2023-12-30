@@ -4,7 +4,7 @@ export const kr = {
   fullName: " Gulxumor Erkinjonova",
   main: {
     who: "누구야",
-    gulxumor: "Gulxumor ?",
+    gulxumor: "Gulxumor ? ",
   },
   navbar: {
     home: "집",
