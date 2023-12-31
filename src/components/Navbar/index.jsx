@@ -1,10 +1,9 @@
-// import i18next from "i18next";
 import { useState } from "react";
 import { BsMenuButton } from "react-icons/bs";
 import { useNavbar } from "../../utils/socials";
 import logo from "../../assets/images/logo.png";
 import { styles } from "../../utils/tailwind_variables";
-import i18next from "i18next";
+// import i18next from "i18next";
 
 const Navbar = () => {
   const { nav_icons } = useNavbar();
@@ -16,32 +15,32 @@ const Navbar = () => {
   };
 
   // ! language Selection
-  const SelectLanguage = () => {
-    return (
-      <select
-        className={`${openLinks === true ? "hidden" : "visible"}`}
-        defaultValue={localStorage.getItem("locale")}
-        onChange={(e) => {
-          i18next.changeLanguage(e.target.value);
-          localStorage.setItem("locale", e.target.value);
-          window.location.reload();
-        }}
-      >
-        <option value="uz">O'zbek</option>
-        <option value="en">English</option>
-        <option value="ru">Русскый</option>
-        <option value="ar">العربية</option>
-        <option value="tr">Türkçe</option>
-        <option value="kr">한국어</option>
-      </select>
-    );
-  };
+  // const SelectLanguage = () => {
+  //   return (
+  //     <select
+  //       className={`${openLinks === true ? "hidden" : "visible"}`}
+  //       defaultValue={localStorage.getItem("locale")}
+  //       onChange={(e) => {
+  //         i18next.changeLanguage(e.target.value);
+  //         localStorage.setItem("locale", e.target.value);
+  //         window.location.reload();
+  //       }}
+  //     >
+  //       <option value="uz">O'zbek</option>
+  //       <option value="en">English</option>
+  //       <option value="ru">Русскый</option>
+  //       <option value="ar">العربية</option>
+  //       <option value="tr">Türkçe</option>
+  //       <option value="kr">한국어</option>
+  //     </select>
+  //   );
+  // };
 
   // ! HiddenLinks
   const HiddenLinks = () => {
     return (
       <ul
-        className={` h-[60px] gap-4 md:gap-7 ${styles.flex} ${
+        className={` h-[60px] gap-2 md:gap-7 ${styles.flex} ${
           openLinks !== true ? "hidden" : "visible"
         }`}
       >
@@ -85,7 +84,7 @@ const Navbar = () => {
           <HiddenLinks />
         </div>
 
-        <SelectLanguage />
+        {/* <SelectLanguage /> */}
 
         <div className="flex gap-8 text-sm items-center nav__items__wrapper">
           {/* {nav_icons.map(({ href, text }, index) => (

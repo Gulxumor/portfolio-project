@@ -92,7 +92,7 @@ html {
 
   .main_text {
     font-size: 110px;
-    margin-top: 100px;
+    /* margin-top: 100px; */
   }
 
   .about__imageWrapper {
@@ -258,11 +258,11 @@ html {
 
 @media (max-width: 812px) {
   .main_text {
-    font-size: 50px;
+    /* font-size: 50px; */
   }
 
   #main {
-    padding-top: 20%;
+    /* padding-top: 20%; */
   }
 }
 
