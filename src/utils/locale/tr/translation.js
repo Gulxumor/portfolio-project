@@ -2,10 +2,6 @@ export const tr = {
   gulxumor: "Gulxumor",
   erkinjonova: "Erkinjonova",
   fullName: " Gulxumor Erkinjonova",
-  main: {
-    who: "KIM",
-    gulxumor: "Gulxumor ?",
-  },
   navbar: {
     home: "Ev",
     about: "Hakkında",
@@ -19,6 +15,7 @@ export const tr = {
     developer: "Geliştirici",
     copywriter: "Metin Yazarı",
     photographer: "Fotoğrafçı",
+    translator: "Tercuman",
     job_desc: `Web sitelerinin ve web uygulamalarının ön uç kısmını, yani kullanıcıların gördüğü ve etkileşimde bulunduğu kısmı oluşturuyorum. Kullanıcıların siteye veya uygulamaya her zaman erişmesine ve etkileşimde bulunmasına olanak tanıyan HTML, CSS ve JavaScript gibi web dillerini kullanarak web siteleri ve uygulamalar oluşturuyorum, insanlar meşgul olduğunuzu düşünüyor.`,
   },
   about: {
@@ -28,7 +25,6 @@ export const tr = {
     download_CV: "CV'yi indir",
     bio: {
       birthday: "Doğum günü",
-      birthdate: "06. 04. 2005",
       age: "Yaş",
       years: "yaşında",
       address: "Adres",

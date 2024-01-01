@@ -2,12 +2,8 @@ export const ar = {
   gulxumor: "Gulxumor",
   erkinjonova: "Erkinjonova",
   fullName: "Gulxumor Erkinjonova",
-  main: {
-    who: "من هي ",
-    gulxumor: "Gulxumor ?",
-  },
   navbar: {
-    home:"bayt",
+    home: "bayt",
     about: "عن",
     skills: "مهارات",
     portfolio: "مَلَفّ",
@@ -15,10 +11,11 @@ export const ar = {
   },
   hero: {
     hello: "أهلاً بك...",
-    myName: "My name is ",
+    myName: "Masmuka ",
     developer: "مطور",
     copywriter: "مؤلف الإعلانات",
     photographer: "مصور فوتوغرافي",
+    translator: "Translator",
     job_desc: `أقوم ببناء الجزء الأمامي من مواقع الويب وتطبيقات الويب - الجزء الذي يراه المستخدمون ويتفاعلون معه. أقوم بإنشاء مواقع الويب والتطبيقات باستخدام لغات الويب مثل HTML وCSS وJavaScript التي تتيح للمستخدمين الوصول إلى الموقع أو التطبيق والتفاعل معه طوال الوقت، حيث يظن الناس أنك مشغول.`,
   },
   about: {
@@ -28,7 +25,6 @@ export const ar = {
     download_CV: "تحميل السيرة الذاتية",
     bio: {
       birthday: "عيد ميلاد",
-      birthdate: "06. 04. 2005",
       age: "عمر",
       years: "سنة",
       address: "عنوان",

@@ -15,10 +15,10 @@ const Forms = () => {
               action="https://formspree.io/f/xbjvkywl"
               method="POST"
             >
-              <div className="w-[300px]">
+              <div className="w-[300px] h-9">
                 <ReactTyped
                   loop
-                  cursorChar="|"
+                  cursorChar=" "
                   backSpeed={50}
                   typeSpeed={100}
                   showCursor={true}

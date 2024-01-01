@@ -29,10 +29,10 @@ const Portfolio = () => {
               <img
                 className="rounded-t-lg w-[300px] h-[195px] portfolio__img hover:skew-x-1"
                 src={src}
-                alt="main_img"
+                alt="portfolio__img"
               />
               <div className="p-5 ">
-                <h5 className="mb-2 text-2xl font-bold tracking-tight portfolio__text-smaller">
+                <h5 className="mb-2 text-2xl font-bold tracking-tight portfolio__text-smaller text-center">
                   {title}
                 </h5>
                 <div className="flex justify-between">

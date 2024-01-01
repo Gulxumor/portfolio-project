@@ -21,7 +21,6 @@ html {
 
 /* ===================== scroll =====================*/
 ::-webkit-scrollbar {
-  max-width: 10px;
   width: 5px;
 }
 
@@ -258,7 +257,7 @@ html {
 
 @media (max-width: 812px) {
   .main_text {
-    /* font-size: 50px; */
+    font-size: 80px;
   }
 
   #main {

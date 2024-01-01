@@ -15,13 +15,13 @@ const Sidebar = () => {
       </div>
 
       <div className="wrapper border-[1px] border-[#e9e9ea] pb-44 pt-20 h-screen">
-        {nav_icons().map(({ icon, href, clas }, index) => (
+        {nav_icons().map(({ icon, href }, index) => (
           <a
             key={index}
             href={href}
             className={`${styles.flex} border-b-[1px] border-[#e9e9ea] py-10 icon h-10 w-full`}
           >
-            <div className={`${styles.sidebar_icons} ${clas}`}>{icon}</div>
+            <div className={`${styles.sidebar_icons}`}>{icon}</div>
           </a>
         ))}
       </div>

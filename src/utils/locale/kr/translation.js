@@ -2,10 +2,6 @@ export const kr = {
   gulxumor: "Gulxumor",
   erkinjonova: "Erkinjonova",
   fullName: " Gulxumor Erkinjonova",
-  main: {
-    who: "누구야",
-    gulxumor: "Gulxumor ? ",
-  },
   navbar: {
     home: "집",
     about: "에 대한",
@@ -19,6 +15,7 @@ export const kr = {
     developer: "개발자",
     copywriter: "카피라이터",
     photographer: "사진작가",
+    translator: "Translator",
     job_desc: `저는 웹 사이트와 웹 애플리케이션의 프런트 엔드 부분, 즉 사용자가 보고 상호 작용하는 부분을 구축합니다. 나는 HTML, CSS, JavaScript와 같은 웹 언어를 사용하여 사용자가 항상 사이트나 앱에 액세스하고 상호 작용할 수 있도록 하는 웹 사이트와 애플리케이션을 만듭니다. 사람들은 당신이 바쁘다고 생각합니다.`,
   },
   about: {
@@ -28,7 +25,6 @@ export const kr = {
     download_CV: "이력서 다운로드",
     bio: {
       birthday: "생일",
-      birthdate: "06. 04. 2005",
       age: "나이",
       years: "살",
       address: "주소",

@@ -2,10 +2,6 @@ export const uz = {
   gulxumor: "Gulxumor",
   erkinjonova: "Erkinjonova",
   fullName: "Gulxumor Erkinjonova",
-  main: {
-    who: "KIM",
-    gulxumor: "Gulxumor ?",
-  },
   navbar: {
     home: "Uy",
     about: "Haqida",
@@ -19,7 +15,9 @@ export const uz = {
     developer: "Dasturchi",
     copywriter: "Kopirayter",
     photographer: "Suratkash",
-    job_desc: `Men veb-saytlar va veb-ilovalarning old qismini yarataman - bu qismi foydalanuvchilar ko'radi va ular bilan o'zaro. Men veb-saytlar va ilovalar yarataman ruxsat beruvchi HTML, CSS va JavaScript kabi veb-tillardan foydalanish foydalanuvchilar har doim sayt yoki ilovaga kirishlari va ular bilan ishlashlari, odamlar sizni band deb o'ylashadi.`,
+    translator: "Tarjimon",
+    job_desc: `Men veb-saytlar va veb-ilovalarning old qismini yarataman - bu qismi foydalanuvchilar ko'radigan qism. 
+    Men veb-saytlar va ilovalar yarataman va HTML, CSS va JavaScript kabi veb-tillardan bemalol foydalanaman va insonlar tushunadigan kod yozaman`,
   },
   about: {
     frontend_dev: "Front-end Dasturchisi",
@@ -28,7 +26,6 @@ export const uz = {
     download_CV: "CV ni yuklash",
     bio: {
       birthday: "Tug'ilgan kun",
-      birthdate: "06. 04. 2005",
       age: "Yosh",
       years: "yosh",
       address: "Manzil",
@@ -44,7 +41,6 @@ export const uz = {
   experiences: {
     experiences: "Tajriba.",
     freelancer_time: "Sentabr 2023 - Hozir",
-    // date={t("experiences.freelancer_time")}
     freelancer: "Frilanser",
     mentor: "Front-End o'qituvchi",
     mentor_loc: "Toshkent, UZ",
@@ -55,7 +51,7 @@ export const uz = {
     intern_loc: "Namangan, UZ",
     intern_time: "Aprel 2023 - Iyun 2023",
     intern_desc1: `• Bir nechta brauzerlar bilan mos veb-saytlar ishlab chiqarilgan`,
-    intern_desc2: `• Veb-ishlab chiqish loyihalari bo'yicha marketing va IT o'rtasida front-end aktivlarini back-end tizimlarga integratsiyalashgan holda bog'langan.`,
+    intern_desc2: `• Veb-ishlab chiqish loyihalari bo'yicha marketing va IT o'rtasida front-end va back-end tizimlarga integratsiyalashgan holda bog'langan.`,
   },
   portfolio: {
     projects: "Proyektlar",

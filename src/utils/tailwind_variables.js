@@ -2,7 +2,7 @@ export const styles = {
   hoverScale: `hover:scale-110`,
   flex: `flex justify-center items-center`,
   mainLetter: `text-9xl font-mario text-orange`,
-  sidebar_icons: `text-xl active:text-orange cursor-pointer`,
+  sidebar_icons: `text-xl active:text-orange cursor-pointer text-[28px]`,
   nav_icons_media: `text-sm cursor-pointer hover:text-orange`,
   socials__Ul: `socials--gap flex py-[8px] items-center text-kulrang_text`,
   socials: `flex justify-center items-center rounded-full bg-black border-white border-2 w-9 h-9 hover:bg-orange`,

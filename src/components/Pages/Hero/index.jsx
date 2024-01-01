@@ -14,19 +14,22 @@ const Hero = () => {
             {t("erkinjonova")}{" "}
             <span className="text-orange"> {t("gulxumor")}</span>
           </h1>
-          <ReactTyped
-            loop
-            cursorChar="|"
-            backSpeed={30}
-            typeSpeed={100}
-            showCursor={true}
-            className={`text-3xl text-orange font-medium`}
-            strings={[
-              t("hero.developer"),
-              t("hero.photographer"),
-              t("hero.copywriter"),
-            ]}
-          />
+          <div className="h-[40px] text-3xl text-orange font-medium">
+            <ReactTyped
+              loop
+              cursorChar=" "
+              backSpeed={30}
+              typeSpeed={100}
+              showCursor={true}
+              className={``}
+              strings={[
+                t("hero.developer"),
+                t("hero.photographer"),
+                t("hero.copywriter"),
+                t("hero.translator"),
+              ]}
+            />
+          </div>
           <p className="text-kulrang_text pt-5">{t("hero.job_desc")}</p>
         </div>
         <div className="hero__img--display-none flex-1">

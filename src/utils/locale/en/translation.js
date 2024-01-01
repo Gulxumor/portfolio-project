@@ -2,10 +2,6 @@ export const en = {
   gulxumor: "Gulxumor",
   erkinjonova: "Erkinjonova",
   fullName: " Gulxumor Erkinjonova",
-  main: {
-    who: "WHO'S",
-    gulxumor: "Gulxumor ?",
-  },
   navbar: {
     home: "Home",
     about: "About",
@@ -19,6 +15,7 @@ export const en = {
     developer: "Developer",
     copywriter: "Copywriter",
     photographer: "Photographer",
+    translator: "Translator",
     job_desc: `I build the front-end portion of websites and web applications - the
             part users see and interact with. I create websites and applications
             using web languages such as HTML, CSS, and JavaScript that allow
@@ -35,7 +32,6 @@ export const en = {
     download_CV: "Download CV",
     bio: {
       birthday: "Birthday",
-      birthdate: "06. 04. 2005",
       age: "Age",
       years: "years",
       address: "Address",
@@ -51,7 +47,6 @@ export const en = {
   experiences: {
     experiences: "Experiences.",
     freelancer_time: "September 2023 - Present",
-    // date={t("experiences.freelancer_time")}
     freelancer: "Freelancer",
     mentor: "Front-End Mentor",
     mentor_loc: "Tashkent, UZ",
