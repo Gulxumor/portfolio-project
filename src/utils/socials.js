@@ -1,5 +1,6 @@
-import { AiFillHome, AiOutlineFileDone, AiOutlineUser } from "react-icons/ai";
+import { useTranslation } from "react-i18next";
 import { BsPersonWorkspace, BsTelephoneOutbound } from "react-icons/bs";
+import { AiFillHome, AiOutlineFileDone, AiOutlineUser } from "react-icons/ai";
 import {
   FaFacebook,
   FaGithub,
@@ -7,7 +8,6 @@ import {
   FaTelegram,
   FaTwitter,
 } from "react-icons/fa";
-import { useTranslation } from "react-i18next";
 
 export const social = [
   {

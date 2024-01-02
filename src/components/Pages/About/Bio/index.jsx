@@ -54,7 +54,7 @@ const Bio = () => {
             {t("about.bio.study_place")}
           </span>
         </li>
-        <li className={`${styles.socials__Ul} flex items-center`}>
+        <li className={`${styles.socials__Ul} flex items-center text-[15px]`}>
           <FaMailBulk color="orange" className="mr-3" />
           <span>
             <label className="mr-3">{t("about.bio.mail")}:</label>

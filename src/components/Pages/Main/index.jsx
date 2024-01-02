@@ -1,6 +1,6 @@
 import { styles } from "../../../utils/tailwind_variables";
 import TextSpan from "./TextSpan.js";
-import ParticlesBg from "./particlesBg.js";
+// import ParticlesBg from "./particlesBg.js";
 const gulxumor = "Gulxumor ?".split("");
 const who = "WHO'S".split("");
 

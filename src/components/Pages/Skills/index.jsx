@@ -1,8 +1,9 @@
 import "./style.css";
 import Marquee from "react-fast-marquee";
+import { useTranslation } from "react-i18next";
 import { education } from "../../../utils/educations";
 import { styles } from "../../../utils/tailwind_variables";
-import { useTranslation } from "react-i18next";
+// import { AiOutlineBorderlessTable, AiOutlinePaperClip } from "react-icons/ai";
 
 const Skills = () => {
   const { t } = useTranslation();
@@ -19,16 +20,20 @@ const Skills = () => {
         </span>
 
         <div className="border-x-4 border-orange py-5 relative skills__marqueWrapper--py select-none ">
-          <Marquee autoFill={true} pauseOnHover direction="right">
+          <Marquee
+            className="pt-2 skills__marque-mt"
+            autoFill={true}
+            pauseOnHover
+            direction="right"
+          >
             {education.map(({ icon, name, color, width, url, link }, index) => (
-              <div
-                className="mb-2 text-2xl font-semibold tracking-tight text-white text-center"
-                style={{ fontSize: `${width ? width : ""}` }}
-                key={index}
-              >
-                <hr className="border-0 bg-orange absolute h-[1px] w-full top-[8px] z-0" />
+              <div key={index} className="flex relative">
+                <hr className="border-0 bg-orange absolute h-[1px] w-full top-[8px] -z-10" />
+                {
+                  // <AiOutlinePaperClip className="text-5xl text-orange absolute z-40 left-1/3 -top-3 -rotate-90" />
+                }
                 <div
-                  className={`w-40 p-2 rounded-lg mr-5 move my-1.5 skills__card--width `}
+                  className={`w-40 p-2 rounded-lg mr-5 my-1.5 move skills__card--width `}
                   style={{ background: `${color}` }}
                 >
                   <div
@@ -40,28 +45,32 @@ const Skills = () => {
                       <img src={url} alt="logo" className="w-[36px] h-[36px]" />
                     )}
                   </div>
+
                   <a
                     href={link}
                     rel="noreferrer"
                     target={"_blank"}
-                    className="skills__text--smaller"
+                    className="mb-2 text-2xl font-semibold tracking-tight text-white text-center"
+                    style={{ fontSize: `${width ? width : ""}` }}
                   >
-                    {name}
+                    <h1 className="skills__text--smaller">{name}</h1>
                   </a>
                 </div>
               </div>
             ))}
           </Marquee>
           <Marquee
-            className="mt-20 skills__marque-mt"
+            className="pt-20 skills__marque-mt"
             autoFill={true}
             pauseOnHover
             direction="left"
           >
             {education.map(({ icon, name, color, width, url, link }, index) => (
-              <div key={index} className="flex">
+              <div key={index} className="flex relative">
                 <hr className="border-0 bg-orange absolute h-[1px] w-full top-[8px] -z-10" />
-                {/* ilgich qo'yilishi kerak */}
+                {
+                  // <AiOutlinePaperClip className="text-5xl text-orange absolute z-40 left-1/3 -top-3" />
+                }
                 <div
                   className={`w-40 p-2 rounded-lg mr-5 my-1.5 move skills__card--width `}
                   style={{ background: `${color}` }}

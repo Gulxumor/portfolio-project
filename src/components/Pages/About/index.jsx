@@ -1,7 +1,6 @@
 import Bio from "./Bio";
 import Socials from "./Bio/social";
 import pdf from "../../../utils/resume.pdf";
-// import Stripe from "../../generics/Stripe";
 import img from "../../../assets/images/main_img.jpg";
 import { styles } from "../../../utils/tailwind_variables";
 import { useTranslation } from "react-i18next";
@@ -69,15 +68,21 @@ const About = () => {
 
             <Bio />
 
-            <button
-              onClick={onButtonClick}
-              className={`bg-orange text-white rounded-sm py-2 px-3 active:scale-95 mt-3 hover:opacity-70`}
-            >
-              {t("about.download_CV")}
-            </button>
+            <div className="flex gap-3 flex-wrap">
+              <button
+                className={`bg-orange text-white rounded-sm py-2 px-3 active:scale-95 mt-3 hover:opacity-70 max-w-[120px]`}
+              >
+                <a href="#contact">{t("about.hire")}</a>
+              </button>
+              <button
+                onClick={onButtonClick}
+                className={`bg-orange text-white rounded-sm py-2 px-3 active:scale-95 mt-3 hover:opacity-70`}
+              >
+                {t("about.download_CV")}
+              </button>
+            </div>
           </div>
         </div>
-        {/* <Stripe /> */}
       </div>
     </section>
   );

@@ -7,9 +7,8 @@ import { styles } from "../../utils/tailwind_variables";
 
 const Navbar = () => {
   const { nav_icons } = useNavbar();
-
   const [openLinks, setOpenLinks] = useState();
-
+  
   const toggleNavbar = () => {
     setOpenLinks(!openLinks);
   };
@@ -44,18 +43,21 @@ const Navbar = () => {
           openLinks !== true ? "hidden" : "visible"
         }`}
       >
-        {nav_icons().map(({ href, text }, index) => (
-          <ul className="" key={index}>
-            <li>
-              <a
-                href={href}
-                className={`${styles.nav_icons_media} md:text-2xl `}
-              >
-                {text}
-              </a>
-            </li>
-          </ul>
-        ))}
+        {nav_icons().map(
+          ({ href, text }, index) =>
+            index > 0 && (
+              <ul key={index}>
+                <li>
+                  <a
+                    href={href}
+                    className={`${styles.nav_icons_media} md:text-3xl `}
+                  >
+                    {text}
+                  </a>
+                </li>
+              </ul>
+            )
+        )}
       </ul>
     );
   };

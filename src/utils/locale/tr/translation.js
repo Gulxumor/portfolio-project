@@ -23,6 +23,7 @@ export const tr = {
     biography: "Biyografi",
     about_job: `İşim bir Ön Uç Geliştiricisi ve işime çok tutkulu ve adadım. Birçok gerçek projede yer aldım. Projeleri başarılı kılmak için gerekli bilgi ve becerileri edindim.`,
     download_CV: "CV'yi indir",
+    hire: "Hire me",
     bio: {
       birthday: "Doğum günü",
       age: "Yaş",

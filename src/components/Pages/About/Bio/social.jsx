@@ -21,7 +21,7 @@ const Socials = () => {
       </li>
       <li className={`${styles.socials}`}>
         <a
-          href="https://facebook.com/Gulxumor"
+          href="https://facebook.com/"
           target={"_blank"}
           rel="noreferrer"
         >

@@ -10,34 +10,6 @@ import portfolio from "../assets/images/projects_img/portfolio.jpg";
 import countries from "../assets/images/projects_img/countries.jpg";
 import new_portfolio from "../assets/images/projects_img/new_portfolio.png";
 
-export const skills = [
-  {
-    id: 0,
-    degree: "92%",
-    skill: "HTML",
-  },
-  {
-    id: 1,
-    degree: "90%",
-    skill: "CSS",
-  },
-  {
-    id: 2,
-    degree: "80%",
-    skill: "JavaScript",
-  },
-  {
-    id: 3,
-    degree: "55%",
-    skill: "TypeScript",
-  },
-  {
-    id: 4,
-    degree: "72%",
-    skill: "React JS",
-  },
-];
-
 export function useEducation() {
   const { t } = useTranslation();
   const teaching = () => [
@@ -134,5 +106,33 @@ export const projects = [
     title: "Portfolio App",
     github_link: "https://github.com/Gulxumor/portfolio-project",
     demo: "https://erkinjonova.netlify.app",
+  },
+];
+
+export const skills = [
+  {
+    id: 0,
+    degree: "92%",
+    skill: "HTML",
+  },
+  {
+    id: 1,
+    degree: "90%",
+    skill: "CSS",
+  },
+  {
+    id: 2,
+    degree: "80%",
+    skill: "JavaScript",
+  },
+  {
+    id: 3,
+    degree: "55%",
+    skill: "TypeScript",
+  },
+  {
+    id: 4,
+    degree: "72%",
+    skill: "React JS",
   },
 ];

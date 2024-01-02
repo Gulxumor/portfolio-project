@@ -30,6 +30,7 @@ export const en = {
               acquired the skills and knowledge necessary to make projects a
               success.`,
     download_CV: "Download CV",
+    hire:"Hire me",
     bio: {
       birthday: "Birthday",
       age: "Age",
@@ -37,7 +38,7 @@ export const en = {
       address: "Address",
       fullAddress: "Fergana, Uzbekistan",
       interests: "Interests",
-      interests_desc: "Coding, Learning new things",
+      interests_desc: "Coding, Learning things",
       study: "Study",
       study_place: "Webbrain Academy",
       mail: "Mail",
@@ -71,7 +72,7 @@ export const en = {
     fullName: "Full Name",
     email: "Email",
     msg: "Message",
-    submit: "Submit",
+    submit: "Sent",
   },
   tech: {
     what_i_do: "What I Do ?",

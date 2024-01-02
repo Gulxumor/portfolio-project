@@ -23,6 +23,7 @@ export const kr = {
     biography: "전기",
     about_job: `제 직업은 프론트엔드 개발자이고 제 작업에 매우 열정적이고 헌신적입니다. 나는 많은 실제 프로젝트에 참여해왔습니다. 나는 프로젝트를 성공시키는 데 필요한 기술과 지식을 습득했습니다.`,
     download_CV: "이력서 다운로드",
+    hire: "Hire me",
     bio: {
       birthday: "생일",
       age: "나이",
