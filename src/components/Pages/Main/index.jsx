@@ -1,14 +1,13 @@
 import { styles } from "../../../utils/tailwind_variables";
 import TextSpan from "./TextSpan.js";
-// import ParticlesBg from "./particlesBg.js";
+import ParticlesBg from "./particlesBg.js";
 const gulxumor = "Gulxumor ?".split("");
 const who = "WHO'S".split("");
-
 
 const Main = () => {
   return (
     <section className="relative bg-white select-none">
-      {/* <ParticlesBg /> */}
+      <ParticlesBg />
       <div className="w-full h-screen overflow-x-hidden bg-fixed" id="main">
         <div className="m-auto w-fit mt-48">
           <h1 className={`${styles.mainLetter} m-auto w-fit main_text`}>

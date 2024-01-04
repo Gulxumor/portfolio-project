@@ -24,7 +24,7 @@ const Education_Skills = () => {
             </div>
           ))}
         </div>
-        {/* <div className="w-1/2 education_skills">
+        {/* //* <div className="w-1/2 education_skills">
           {skills.map(({ id, degree, skill }) => (
             <div className="flex items-center mb-5" key={id}>
               <h1 className="font-semibold text-3xl mx-[15px] rounded-md">
