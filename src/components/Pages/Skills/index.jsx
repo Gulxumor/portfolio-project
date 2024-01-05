@@ -3,7 +3,6 @@ import Marquee from "react-fast-marquee";
 import { useTranslation } from "react-i18next";
 import { education } from "../../../utils/educations";
 import { styles } from "../../../utils/tailwind_variables";
-// import { AiOutlineBorderlessTable, AiOutlinePaperClip } from "react-icons/ai";
 
 const Skills = () => {
   const { t } = useTranslation();
@@ -29,9 +28,7 @@ const Skills = () => {
             {education.map(({ icon, name, color, width, url, link }, index) => (
               <div key={index} className="flex relative">
                 <hr className="border-0 bg-orange absolute h-[1px] w-full top-[8px] -z-10" />
-                {
-                  // <AiOutlinePaperClip className="text-5xl text-orange absolute z-40 left-1/3 -top-3 -rotate-90" />
-                }
+                {/*//^ Ilgich bo'lishi kerak bu yerda */}
                 <div
                   className={`w-40 p-2 rounded-lg mr-5 my-1.5 move skills__card--width `}
                   style={{ background: `${color}` }}
@@ -68,9 +65,7 @@ const Skills = () => {
             {education.map(({ icon, name, color, width, url, link }, index) => (
               <div key={index} className="flex relative">
                 <hr className="border-0 bg-orange absolute h-[1px] w-full top-[8px] -z-10" />
-                {
-                  // <AiOutlinePaperClip className="text-5xl text-orange absolute z-40 left-1/3 -top-3" />
-                }
+                {/*//^ Ilgich bo'lishi kerak bu yerda */}
                 <div
                   className={`w-40 p-2 rounded-lg mr-5 my-1.5 move skills__card--width `}
                   style={{ background: `${color}` }}

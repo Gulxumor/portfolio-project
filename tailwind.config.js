@@ -11,7 +11,6 @@ module.exports = {
         black: "#0b0b13",
       },
       fontFamily: {
-        rubik: ["Rubik", "sans-serif", "monospac"],
         mario: ["New Super Mario Font U", "sans-serif"],
         gagalin: ["Gagalin", "sans-serif"],
       },

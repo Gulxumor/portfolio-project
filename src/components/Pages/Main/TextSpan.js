@@ -1,5 +1,5 @@
-import { motion, useAnimationControls } from "framer-motion";
 import { useState } from "react";
+import { motion, useAnimationControls } from "framer-motion";
 
 const TextSpan = ({ children }) => {
   const [isPlaying, setIsPlaying] = useState(false);

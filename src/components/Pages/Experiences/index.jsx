@@ -30,12 +30,6 @@ const Experiences = () => {
             <h3 className="vertical-timeline-element-title">
               {t("experiences.freelancer")}
             </h3>
-            {/* <h4 className="vertical-timeline-element-subtitle">Tashkent, UZ</h4>
-          <p>• Taught students HTML, CSS, JavaScript, React</p>
-          <p>
-            • Coded using HTML, CSS and JavaScript to develop features for both
-            mobile and desktop platforms
-          </p> */}
           </VerticalTimelineElement>
           <VerticalTimelineElement
             contentArrowStyle={{ borderRight: "7px solid rgb(33, 150, 243)" }}

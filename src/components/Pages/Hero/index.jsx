@@ -1,5 +1,5 @@
-import { useTranslation } from "react-i18next";
 import ReactTyped from "react-typed";
+import { useTranslation } from "react-i18next";
 import logo from "../../../assets/images/logo.png";
 import { styles } from "../../../utils/tailwind_variables";
 
@@ -17,11 +17,9 @@ const Hero = () => {
           <div className="h-[40px] text-3xl text-orange font-medium">
             <ReactTyped
               loop
-              cursorChar=" "
               backSpeed={30}
               typeSpeed={100}
               showCursor={true}
-              className={``}
               strings={[
                 t("hero.developer"),
                 t("hero.photographer"),

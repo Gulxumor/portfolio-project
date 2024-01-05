@@ -70,7 +70,7 @@ const Navbar = () => {
         className={`max-w-screen-x my-0 mx-auto px-20 ${styles.flex} justify-between navbar__innerWrapper--px`}
       >
         {/*//!  Logo and hiddenLinks is wrapped here */}
-        <div className="flex items-center justify-between" id={openLinks}>
+        <div className={`flex items-center justify-between ${openLinks}`}>
           <a
             href="#home"
             className={`${openLinks === true ? "hidden" : "visible"}`}

@@ -36,7 +36,7 @@ const Forms = () => {
                       type="text"
                       name="FullName"
                       placeholder=" "
-                      pattern="[A-z]*"
+                      minLength={3}
                       id="floating_outlined"
                       className={`${styles.form__input} form__input`}
                     />
@@ -71,6 +71,7 @@ const Forms = () => {
                       type="text"
                       name="text"
                       placeholder=" "
+                      minLength={5}
                       id="floating_outlined"
                       className={`${styles.form__input}`}
                     />
