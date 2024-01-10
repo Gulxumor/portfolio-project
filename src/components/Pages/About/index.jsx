@@ -24,7 +24,7 @@ const About = () => {
 
   return (
     <section id="about" className="pt-[10%] w-[80%] mx-auto">
-      <div className={``}>
+      <div>
         <div className={`flex flex-wrap`}>
           <div className={`mr-20 ml-5 mt-10 about__imageWrapper flex-1`}>
             <div className="w-[350px] h-[350px] relative about__image mx-auto">

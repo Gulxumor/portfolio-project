@@ -30,7 +30,7 @@ export const en = {
               acquired the skills and knowledge necessary to make projects a
               success.`,
     download_CV: "Download CV",
-    hire:"Hire me",
+    hire: "Hire me",
     bio: {
       birthday: "Birthday",
       age: "Age",

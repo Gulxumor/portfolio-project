@@ -19,7 +19,7 @@ export const social = [
     icon: <FaTelegram />,
   },
   {
-    href: "facebook.com/",
+    href: "https://www.facebook.com/profile.php?id=100092847492429",
     icon: <FaFacebook />,
   },
   {
