@@ -12,7 +12,7 @@ const Socials = () => {
     <ul className={`${styles.flex} w-full gap-2 mt-5`}>
       <li className={`${styles.socials}`}>
         <a
-          href="https://www.pinterest.com/gulxumorerkinjonova/"
+          href="https://www.pinterest.com/gulxumoryoqubova/"
           target={"_blank"}
           rel="noreferrer"
         >

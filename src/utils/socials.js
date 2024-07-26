@@ -15,7 +15,7 @@ export const social = [
     icon: <FaGithub />,
   },
   {
-    href: "t.me/ErkinjonovaGulxumor",
+    href: "t.me/Yoqubova_Gulxumor",
     icon: <FaTelegram />,
   },
   {
@@ -27,7 +27,7 @@ export const social = [
     icon: <FaTwitter />,
   },
   {
-    href: "pinterest.com/gulxumorerkinjonova/",
+    href: "pinterest.com/gulxumoryoqubova/",
     icon: <FaPinterest />,
   },
 ];

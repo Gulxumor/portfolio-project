@@ -1,7 +1,7 @@
 export const ar = {
   gulxumor: "Gulxumor",
-  erkinjonova: "Erkinjonova",
-  fullName: "Gulxumor Erkinjonova",
+  erkinjonova: "Yoqubova",
+  fullName: "Gulxumor Yoqubova",
   navbar: {
     home: "bayt",
     about: "عن",

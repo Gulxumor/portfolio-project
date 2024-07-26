@@ -1,7 +1,7 @@
 export const ru = {
   gulxumor: "Gulxumor",
-  erkinjonova: "Erkinjonova",
-  fullName: " Gulxumor Erkinjonova",
+  erkinjonova: "Yoqubova",
+  fullName: " Gulxumor Yoqubova",
   navbar: {
     home: "Дoм",
     about: "About",

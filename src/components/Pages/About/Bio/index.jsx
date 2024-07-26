@@ -73,8 +73,8 @@ const Bio = () => {
           <span>
             <label className="mr-3">{t("about.bio.phone")}:</label>
             <button className="bg-none border-none">
-              <a href="tel:+998908345600" className="socials__btn">
-                +998 (90) 834 - 56 - 00
+              <a href="tel:+998886737171" className="socials__btn">
+                +998 (88) 673 - 71 - 71
               </a>
             </button>
           </span>

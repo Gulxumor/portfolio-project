@@ -1,7 +1,7 @@
 export const kr = {
   gulxumor: "Gulxumor",
-  erkinjonova: "Erkinjonova",
-  fullName: " Gulxumor Erkinjonova",
+  erkinjonova: "Yoqubova",
+  fullName: " Gulxumor Yoqubova",
   navbar: {
     home: "집",
     about: "에 대한",

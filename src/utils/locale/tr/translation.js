@@ -1,7 +1,7 @@
 export const tr = {
   gulxumor: "Gulxumor",
-  erkinjonova: "Erkinjonova",
-  fullName: " Gulxumor Erkinjonova",
+  erkinjonova: "Yoqubova",
+  fullName: " Gulxumor Yoqubova",
   navbar: {
     home: "Ev",
     about: "Hakkında",

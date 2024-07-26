@@ -1,7 +1,7 @@
 export const en = {
   gulxumor: "Gulxumor",
-  erkinjonova: "Erkinjonova",
-  fullName: " Gulxumor Erkinjonova",
+  erkinjonova: "Yoqubova",
+  fullName: " Gulxumor Yoqubova",
   navbar: {
     home: "Home",
     about: "About",
@@ -25,7 +25,7 @@ export const en = {
   about: {
     frontend_dev: "Front-end Developer",
     biography: "Biography",
-    about_job: `My job is a Frontend Developer, and I'm very passionate and dedicated to
+    about_job: ` My job is a Frontend Developer, and I'm very passionate and dedicated to
               my work. I have been involved in many real projects. I have
               acquired the skills and knowledge necessary to make projects a
               success.`,

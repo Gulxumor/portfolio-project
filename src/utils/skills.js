@@ -105,7 +105,7 @@ export const projects = [
     src: new_portfolio,
     title: "Portfolio App",
     github_link: "https://github.com/Gulxumor/portfolio-project",
-    demo: "https://erkinjonova.netlify.app",
+    demo: "https://yoqubova.netlify.app",
   },
 ];
 

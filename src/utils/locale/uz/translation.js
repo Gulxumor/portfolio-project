@@ -1,7 +1,7 @@
 export const uz = {
   gulxumor: "Gulxumor",
-  erkinjonova: "Erkinjonova",
-  fullName: "Gulxumor Erkinjonova",
+  erkinjonova: "Yoqubova",
+  fullName: "Gulxumor Yoqubova",
   navbar: {
     home: "Uy",
     about: "Haqida",
@@ -22,7 +22,7 @@ export const uz = {
   about: {
     frontend_dev: "Front-end Dasturchisi",
     biography: "Biografiya",
-    about_job: `Mening ishim Frontend Developer bo‘lib, men o‘z ishimga juda ishtiyoqli va sodiqman. Men ko'plab haqiqiy loyihalarda ishtirok etganman. Loyihalarni muvaffaqiyatli amalga oshirish uchun zarur bo'lgan ko'nikma va bilimlarga ega bo'ldim.`,
+    about_job: ` Mening kasbim Frontend Developer bo'lib, men o'z ishimga juda ishtiyoqli va sodiqman. Men ko'plab haqiqiy loyihalarda ishtirok etganman. Loyihalarni muvaffaqiyatli amalga oshirish uchun zarur bo'lgan ko'nikma va bilimlarga ega bo'ldim.`,
     download_CV: "CV ni yuklash",
     hire: "Hire me",
     bio: {
