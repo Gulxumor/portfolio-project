@@ -16,7 +16,7 @@ const About = () => {
         // Setting various property values
         let link = document.createElement("a");
         link.href = fileURL;
-        link.download = "Gulxumor_Erkinjonova_resume.pdf";
+        link.download = "Gulxumor_Yoqubova_resume.pdf";
         link.click();
       });
     });
